@@ -1,0 +1,6 @@
+property_id,region,property_type,property_age,floor_area,bedrooms,epc_rating,heating_type,insulation,glazing,solar,smart_controls,baseline_gas_kwh,baseline_elec_kwh,current_value
+S000001,London,Terraced,Pre-1930,85.0,3,E,Gas Boiler,Poor,Single,False,False,14500.0,2800.0,480000.0
+S000002,North West,Semi-Detached,1930-1982,95.0,3,D,Gas Boiler,Moderate,Double,False,False,11200.0,3100.0,210000.0
+S000003,South East,Detached,1983-2012,140.0,4,C,Heat Pump,Good,Double,True,True,0.0,5200.0,410000.0
+S000004,Scotland,Flat,Post-2012,55.0,2,B,Heat Pump,Good,Triple,True,True,0.0,2600.0,165000.0
+S000005,Wales,Detached,Pre-1930,180.0,5,G,Oil Boiler,Poor,Single,False,False,24800.0,3400.0,260000.0

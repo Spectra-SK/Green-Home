@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenHome AI · Lloyds Smart Retrofit Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Eco Login Overlay (GREEN THEME) -->
+  <div id="loginOverlay" class="login-overlay">
+    <canvas id="loginBgCanvas"></canvas>
+
+    <div class="login-wrapper">
+      <div class="login-hero-left">
+        <h1>How green is your home?</h1>
+        <p>A data-driven home energy assessment and retrofit planning engine.</p>
+        <div class="login-badges">
+          <span class="login-pill">DESNZ / DEFRA Aligned</span>
+          <span class="login-pill">7-Factor Energy Engine</span>
+        </div>
+        <p class="login-hero-note">Demo access uses synthetic property data. No real customer account is required.</p>
+      </div>
+
+      <div class="login-card-right">
+        <div class="login-card" id="loginCard">
+          <div class="login-sprout-wrap">
+            <div class="login-sprout" id="loginSprout"><i data-lucide="sprout"></i></div>
+            <div class="energy-ring" id="energyRing"></div>
+          </div>
+
+          <!-- Normal Form View -->
+          <div id="loginFormContainer">
+            <h2>GreenHome AI Portal</h2>
+            <p>Sign in to load your personalized decarbonisation profile.</p>
+
+            <form id="loginForm" class="login-form">
+              <div class="login-input-group">
+                <label for="loginCustId">Customer Account ID</label>
+                <div class="input-with-icon" id="inputWrapper">
+                  <i data-lucide="user"></i>
+                  <input type="text" id="loginCustId" value="C03093" placeholder="e.g. C03093" required autocomplete="off" />
+                </div>
+                <div id="loginErrorMsg" class="login-error-msg" style="display: none;"></div>
+                <span class="login-hint">Try C03093, C00467 or any ID from synthetic data</span>
+              </div>
+
+              <button type="submit" id="btnLoginSubmit" class="btn-eco-login">
+                <span>Access Eco Portal</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Typewriter Welcome State -->
+          <div id="typewriterContainer" class="typewriter-container" style="display: none;">
+            <h2 class="typewriter-title">
+              <span id="typewriterText"></span><span class="cursor">|</span>
+            </h2>
+            <p class="typewriter-sub">Decrypting home telemetry & loading digital twin...</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSISTENT BLUE DASHBOARD BACKGROUND CANVAS -->
+  <canvas id="dashboardBgCanvas"></canvas>
+
+  <div class="app-layout" id="appLayout">
+    <!-- Left Sticky Sidebar Menu (BLUE THEME) -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon"><i data-lucide="leaf"></i></div>
+        <div class="brand-text">GreenHome<strong>AI</strong></div>
+      </div>
+      <span class="team-tag">Lloyds Megathon</span>
+
+      <nav class="side-nav">
+        <div class="nav-label">Navigation</div>
+        <a class="nav-link active" href="#overview"><i data-lucide="home"></i><span>Overview</span></a>
+        <a class="nav-link" href="#assessment"><i data-lucide="clipboard-list"></i><span>Home Details</span></a>
+        <a class="nav-link" href="#breakdown"><i data-lucide="pie-chart"></i><span>7 Score Factors</span></a>
+        <a class="nav-link" href="#simulator"><i data-lucide="sliders"></i><span>Upgrade Simulator</span></a>
+        <a class="nav-link" href="#fuel-tradeoff"><i data-lucide="scale"></i><span>Fuel Trade-Offs</span></a>
+        <a class="nav-link" href="#battle"><i data-lucide="scale"></i><span>Package Comparison</span></a>
+        <a class="nav-link" href="#advisor"><i data-lucide="sparkles"></i><span>AI Advisor</span></a>
+      </nav>
+
+      <div class="sidebar-status">
+        <span class="status-indicator"></span>
+        <span><small id="userSessionDisplay">Customer: C03093</small></span>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="breadcrumbs">Home Assessment <span class="sep">/</span> Interactive Decarbonisation Planner</div>
+        <div class="top-actions-cluster">
+          <button type="button" class="btn-logout" id="btnLogout" title="Sign out of eco portal">
+            <i data-lucide="log-out"></i> Logout
+          </button>
+        </div>
+      </header>
+
+      <!-- 1. Overview & Hero -->
+      <section id="overview" class="content-section">
+        <div class="hero-card">
+          <div class="hero-left">
+            <span class="pill-eyebrow">🌱 How Green Is Your House?</span>
+            <h1 class="hero-heading">A clearer picture of your home’s energy.</h1>
+            <p class="hero-sub">
+              See what’s driving your score today, simulate clean upgrades, and discover <strong>how to save money, stay warm, and cut carbon</strong>.
+            </p>
+            <div class="meta-pills" id="homeMetaPills">
+              <span class="pill">Detached 3-Bed</span>
+              <span class="pill">EPC Band E</span>
+              <span class="pill">95 m² Floor Area</span>
+              <span class="pill">Baseline £350,000</span>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="score-dial-card">
+              <div class="score-hero-container">
+                <div class="score-card-item" id="currentScoreDisplay">
+                  <div class="dial-circle">
+                    <span class="dial-number" id="heroScoreVal">—</span>
+                    <span class="dial-max">/ 100</span>
+                  </div>
+                  <span class="score-badge poor" id="heroScoreBand">No Data</span>
+                  <span class="score-card-caption">As your home is today</span>
+                </div>
+
+                <div class="score-arrow-divider">
+                  <i data-lucide="arrow-right"></i>
+                  <span class="uplift-pill" id="scoreUpliftPill">+0 pts</span>
+                </div>
+
+                <div class="score-card-item" id="potentialScoreDisplay">
+                  <div class="dial-circle potential">
+                    <span class="dial-number" id="potentialScoreVal">—</span>
+                    <span class="dial-max">/ 100</span>
+                  </div>
+                  <span class="score-badge poor" id="potentialScoreBand">No Data</span>
+                  <span class="score-card-caption">With simulated upgrades</span>
+                </div>
+              </div>
+            </div>
+            <p class="score-desc" id="heroScoreDesc">High energy loss recorded through windows & uninsulated walls.</p>
+          </div>
+        </div>
+
+        <!-- Metric Summary Cards -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon elec"><i data-lucide="zap"></i></div>
+            <div class="metric-data">
+              <span class="metric-label">Electricity Impact</span>
+              <h3 class="metric-val" id="metricElec">—</h3>
+              <span class="metric-hint" id="metricElecHint">Run an assessment to see your scenario</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon gas"><i data-lucide="flame"></i></div>
+            <div class="metric-data">
+              <span class="metric-label">Gas Change</span>
+              <h3 class="metric-val green" id="metricGas">—</h3>
+              <span class="metric-hint" id="metricGasHint">Run an assessment to see your scenario</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon carbon"><i data-lucide="leaf"></i></div>
+            <div class="metric-data">
+              <span class="metric-label">Carbon Reduction (DEFRA)</span>
+              <h3 class="metric-val" id="metricCarbon">2.13 Tonnes/yr</h3>
+              <span class="metric-hint">Equal to ~95 mature trees planted</span>
+            </div>
+          </div>
+
+          <div class="metric-card highlight">
+            <div class="metric-icon value"><i data-lucide="trending-up"></i></div>
+            <div class="metric-data">
+              <span class="metric-label">Home Value Uplift</span>
+              <h3 class="metric-val" id="metricValue">—</h3>
+              <span class="metric-hint" id="metricValueHint">Modelled estimate, not a guaranteed sale price</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Home Assessment Inputs Form -->
+      <section id="assessment" class="content-section">
+        <div class="section-box">
+          <div class="box-title-row">
+            <span class="step-badge">Step 1</span>
+            <div>
+              <h2>Tell Us About Your Home</h2>
+              <p>Review and fine-tune your home's current energy specifications below.</p>
+            </div>
+          </div>
+
+          <form id="assessmentForm" class="inputs-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="epcRating">Energy Certificate (EPC)</label>
+                <select id="epcRating" required>
+                  <option value="A">A · Super Efficient</option>
+                  <option value="B">B · Very Good</option>
+                  <option value="C">C · Good</option>
+                  <option value="D">D · Average UK Home</option>
+                  <option value="E" selected>E · High Bills / Drafty</option>
+                  <option value="F">F · Poor</option>
+                  <option value="G">G · Very Inefficient</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="insulation">Insulation Condition</label>
+                <select id="insulation" required>
+                  <option value="Poor" selected>Poor (Heat escapes fast)</option>
+                  <option value="Moderate">Moderate (Average)</option>
+                  <option value="Good">Good (Warm & modern)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="heatingType">Heating System</label>
+                <select id="heatingType" required>
+                  <option value="Standard gas boiler" selected>Old Gas Boiler</option>
+                  <option value="Modern condensing gas boiler">Modern Condensing Boiler</option>
+                  <option value="Air-source heat pump">Air-Source Heat Pump</option>
+                  <option value="Electric storage heaters">Electric Heaters</option>
+                  <option value="Oil or LPG boiler">Oil / LPG Boiler</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="glazing">Glazing Type</label>
+                <select id="glazing" required>
+                  <option value="Single" selected>Single Glazed (Drafty)</option>
+                  <option value="Double">Double Glazed (Standard)</option>
+                  <option value="Triple">Triple Glazed (Super warm)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="floorArea">Floor Area (m²)</label>
+                <input type="number" id="floorArea" value="95" min="20" max="600" step="any" required>
+              </div>
+
+              <div class="form-group">
+                <label for="currentValue">Current Property Value (£)</label>
+                <input type="number" id="currentValue" value="350000" min="50000" step="any" required>
+              </div>
+
+              <div class="form-group">
+                <label for="baselineElec">Baseline Electricity (kWh/yr)</label>
+                <input type="number" id="baselineElec" value="4800" min="0" step="any" required>
+              </div>
+
+              <div class="form-group">
+                <label for="baselineGas">Baseline Gas (kWh/yr)</label>
+                <input type="number" id="baselineGas" value="12000" min="0" step="any" required>
+              </div>
+            </div>
+
+            <div class="form-btn-row">
+              <button type="submit" class="btn-primary" id="btnSubmit">
+                <i data-lucide="calculator"></i> Calculate Green Home Score & Plan
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 3. Seven Component Sub-Scores -->
+      <section id="breakdown" class="content-section">
+        <div class="section-box">
+          <div class="box-title-row">
+            <span class="step-badge">Step 2</span>
+            <div>
+              <h2>The 7 Components Shaping Your Score</h2>
+              <p>Scores are calculated using the exact Lloyds fixed weights to prevent double-counting.</p>
+            </div>
+          </div>
+          <div class="factors-grid" id="factorsGrid">
+            <!-- Rendered by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Interactive Upgrade Simulator (What-If Twin) -->
+      <section id="simulator" class="content-section">
+        <div class="section-box highlight-box">
+          <div class="box-title-row">
+            <span class="step-badge gold">Step 3</span>
+            <div>
+              <h2>Digital Twin · Interactive Upgrade Simulator</h2>
+              <p>Flip the switches below to see how each upgrade improves your score and cuts carbon in real-time!</p>
+            </div>
+          </div>
+          <div class="upgrades-stack" id="upgradesStack">
+            <!-- Injected via script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. See Fuel Trade-Offs Clearly (Carbon Truth Meter) -->
+      <section id="fuel-tradeoff" class="content-section">
+        <div class="section-box">
+          <div class="box-title-row">
+            <span class="step-badge blue">Truth Meter</span>
+            <div>
+              <h2>See the Fuel Trade-Offs Clearly</h2>
+              <p><strong>Gas drops to zero</strong> while clean electricity increases slightly when you install a heat pump. Here's the proof:</p>
+            </div>
+          </div>
+
+          <div class="fuel-compare-card">
+            <div class="fuel-row">
+              <div class="fuel-head">
+                <span class="fuel-title"><i data-lucide="zap"></i> Grid Electricity (kWh/yr)</span>
+                <span class="fuel-tag warn" id="tagElecChange">+300 kWh clean power</span>
+              </div>
+              <div class="dual-bars">
+                <div class="bar-item">
+                  <span class="bar-lbl">Today:</span>
+                  <div class="bar-track"><div class="bar-fill before" id="barElecBefore" style="width: 48%;"></div></div>
+                  <strong id="lblElecBefore">4,800 kWh</strong>
+                </div>
+                <div class="bar-item">
+                  <span class="bar-lbl">With Upgrades:</span>
+                  <div class="bar-track"><div class="bar-fill after-elec" id="barElecAfter" style="width: 51%;"></div></div>
+                  <strong id="lblElecAfter">5,100 kWh</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="fuel-row">
+              <div class="fuel-head">
+                <span class="fuel-title"><i data-lucide="flame"></i> Fossil Gas (kWh/yr)</span>
+                <span class="fuel-tag good" id="tagGasChange">-100% Fossil fuel eliminated</span>
+              </div>
+              <div class="dual-bars">
+                <div class="bar-item">
+                  <span class="bar-lbl">Today:</span>
+                  <div class="bar-track"><div class="bar-fill before-gas" id="barGasBefore" style="width: 100%;"></div></div>
+                  <strong id="lblGasBefore">12,000 kWh</strong>
+                </div>
+                <div class="bar-item">
+                  <span class="bar-lbl">With Upgrades:</span>
+                  <div class="bar-track"><div class="bar-fill after-gas" id="barGasAfter" style="width: 0%;"></div></div>
+                  <strong id="lblGasAfter">0 kWh (100% Clean)</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="truth-banner">
+              <i data-lucide="check-circle-2"></i>
+              <span id="truthBannerText"><strong>The Net Result:</strong> Run an assessment above to see the calculated carbon impact of your current scenario here.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Package Comparison (Budget-Aware Planner) -->
+      <section id="battle" class="content-section">
+        <div class="section-box">
+          <div class="box-title-row">
+            <span class="step-badge purple">Planner</span>
+            <div>
+              <h2>Package Comparison · Find the Best Match for Your Budget</h2>
+              <p>Compare two tailored investment options based on your available budget and priorities.</p>
+            </div>
+          </div>
+
+          <div class="battle-controls-card">
+            <div class="budget-slider-col">
+              <div class="budget-top">
+                <label for="battleBudget">Available Budget:</label>
+                <strong id="battleBudgetVal">£10,000</strong>
+              </div>
+              <input type="range" id="battleBudget" min="1000" max="25000" step="500" value="10000" />
+              <div class="slider-ticks"><span>£1,000</span><span>£12,500</span><span>£25,000</span></div>
+            </div>
+
+            <div class="objective-col">
+              <span class="obj-label">Your Main Goal:</span>
+              <div class="obj-pills" role="group">
+                <button type="button" class="obj-btn active" data-obj="carbon">Maximise Carbon Saved</button>
+                <button type="button" class="obj-btn" data-obj="bills">Lowest Energy Bills</button>
+                <button type="button" class="obj-btn" data-obj="value">Boost Property Value</button>
+              </div>
+            </div>
+
+            <button type="button" class="btn-battle-sim" id="btnRunBattle">
+              <i data-lucide="scale"></i> Compare Plans
+            </button>
+          </div>
+
+          <div class="battle-plans-grid" id="battlePlansGrid">
+            <p class="battle-notice">Click "Compare Plans" to see two tailored investment options for your property.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Grounded AI Energy Advisor -->
+      <section id="advisor" class="content-section">
+        <div class="section-box ai-advisor-card" id="advisorCard">
+          <div class="box-title-row">
+            <span class="step-badge ai"><i data-lucide="sparkles"></i> AI Layer</span>
+            <div>
+              <h2>Ask Your Grounded Energy Advisor</h2>
+              <p>The AI explains results produced by our calculation engine. Responses are grounded in available property data, with assumptions and limitations clearly stated.</p>
+            </div>
+            <button id="advisorExpandBtn" class="advisor-expand-btn" type="button" title="Expand to Full Screen">⛶ Expand</button>
+          </div>
+
+          <div class="ai-box-inner">
+            <div class="ai-response-bubble">
+              <div class="ai-bot-avatar"><i data-lucide="bot"></i></div>
+              <p id="aiAdvisorReply">
+                Run an assessment above to see your personalised Green Home Score summary here.
+              </p>
+            </div>
+
+            <div class="chat-bar">
+              <input type="text" id="chatInputBox" placeholder="Ask a question (e.g. Why did my electricity use increase with a heat pump?)..." />
+              <button type="button" class="btn-chat-send" id="btnChatSend">
+                Ask Advisor <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <span class="footer-logo">🌿 GreenHome Advisor</span>
+              <span class="footer-divider">•</span>
+              <span class="footer-meta">Lloyds Banking Group Eco-Portal</span>
+            </div>
+            <div class="footer-compliance">
+              <span class="compliance-pill">DESNZ / DEFRA Aligned</span>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p class="footer-disclaimer">
+              All ratings, savings, and value uplifts are calculated via deterministic physics models and hedonic regressions. Figures represent indicative engineering estimates, not commercial guarantees.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

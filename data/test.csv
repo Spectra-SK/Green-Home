@@ -1,0 +1,490 @@
+property_id,customer_id,region,property_type,property_age,floor_area,bedrooms,epc_rating,heating_type,insulation,glazing,solar,smart_controls,baseline_gas_kwh,baseline_elec_kwh,current_value,target_improvement_potential_pct,target_value_uplift_pct
+P000001,C00861,London,Terraced,1983-2012,100.0,2,C,Gas Boiler,Moderate,Single,False,False,19353.0,2601.7,656400.0,75.0,0.0324
+P000002,C03773,Wales,Semi-Detached,Post-2012,78.7,1,D,Gas Boiler,Moderate,Double,False,True,11116.7,3147.6,259400.0,75.0,0.0422
+P000005,C03445,Wales,Detached,1983-2012,45.0,1,A,Heat Pump,Good,Double,True,True,0.0,1753.9,161800.0,54.39,0.0127
+P000021,C02748,Wales,Semi-Detached,Pre-1930,62.0,1,A,Gas Boiler,Good,Triple,True,True,6898.6,1040.4,190800.0,75.0,0.0194
+P000026,C03006,Midlands,Detached,Post-2012,96.5,2,B,Heat Pump,Good,Double,True,False,0.0,3570.4,363200.0,17.07,0.013
+P000027,C01900,South East,Detached,1930-1982,113.7,2,D,Gas Boiler,Moderate,Single,False,False,23930.4,4284.3,579600.0,75.0,0.0501
+P000029,C01529,London,Flat,1983-2012,86.2,3,F,Oil Boiler,Poor,Single,False,False,17614.9,2808.9,601800.0,75.0,0.0836
+P000046,C00776,Wales,Semi-Detached,1930-1982,45.0,2,D,Gas Boiler,Poor,Double,False,True,9656.2,1407.2,196100.0,75.0,0.0586
+P000051,C01586,Midlands,Flat,1983-2012,88.9,2,C,Gas Boiler,Good,Single,False,True,10013.3,2483.4,321500.0,75.0,0.0377
+P000063,C03799,Scotland,Detached,1930-1982,79.3,1,C,Gas Boiler,Moderate,Double,False,False,10517.6,2203.4,284100.0,75.0,0.0419
+P000069,C03994,Wales,Semi-Detached,1983-2012,81.9,1,E,Gas Boiler,Poor,Single,False,False,21746.8,2554.7,259900.0,75.0,0.0677
+P000070,C00380,Midlands,Terraced,1930-1982,123.3,2,B,Gas Boiler,Good,Triple,True,False,12107.4,2654.7,433600.0,68.39,0.0148
+P000079,C00392,North West,Semi-Detached,1983-2012,122.7,2,C,Gas Boiler,Good,Double,False,False,11059.1,3445.7,451700.0,72.33,0.0385
+P000091,C02691,North West,Flat,1930-1982,47.8,1,D,Gas Boiler,Moderate,Double,False,False,6080.4,1478.7,202900.0,75.0,0.0517
+P000100,C00564,Wales,Semi-Detached,Pre-1930,65.6,2,D,Gas Boiler,Moderate,Double,False,False,10549.1,1903.9,220700.0,75.0,0.0561
+P000105,C01060,North West,Terraced,Pre-1930,150.8,3,D,Electric Storage,Moderate,Single,False,True,31656.1,5296.2,557900.0,75.0,0.0484
+P000120,C03303,South East,Terraced,1930-1982,84.1,2,E,Gas Boiler,Poor,Single,False,False,17666.5,2755.3,438600.0,75.0,0.0572
+P000136,C01292,South East,Semi-Detached,1930-1982,119.0,2,B,Heat Pump,Good,Triple,True,False,0.0,4741.4,605400.0,0.0,0.01
+P000172,C03220,Scotland,Detached,Post-2012,143.3,3,E,Gas Boiler,Poor,Double,False,False,34132.9,5320.5,455200.0,75.0,0.0546
+P000187,C03644,South East,Flat,1930-1982,91.4,3,C,Electric Storage,Good,Double,False,False,8605.3,2771.8,500200.0,75.0,0.0457
+P000188,C02050,London,Terraced,1930-1982,132.0,4,B,Heat Pump,Good,Double,False,True,0.0,9151.9,901200.0,34.2,0.0164
+P000189,C03724,North West,Terraced,1930-1982,114.9,2,D,Gas Boiler,Good,Single,False,True,13349.0,3123.7,417700.0,75.0,0.0551
+P000207,C00099,London,Detached,1930-1982,50.0,2,A,Heat Pump,Good,Triple,True,True,0.0,1854.5,367700.0,56.86,0.0194
+P000209,C02962,South East,Terraced,1930-1982,79.1,2,B,Heat Pump,Good,Triple,False,False,0.0,4707.1,417500.0,47.5,0.0175
+P000214,C00957,Wales,Semi-Detached,1930-1982,97.5,3,C,Gas Boiler,Good,Double,False,True,12473.7,3115.9,336100.0,75.0,0.0254
+P000215,C04068,North West,Terraced,Post-2012,123.4,3,B,Heat Pump,Good,Double,False,True,0.0,8050.5,463900.0,45.22,0.0316
+P000241,C03445,London,Detached,Pre-1930,101.5,2,D,Gas Boiler,Moderate,Double,True,False,13020.2,2182.4,670100.0,75.0,0.0295
+P000245,C03421,Scotland,Semi-Detached,1983-2012,45.0,1,C,Heat Pump,Moderate,Double,False,True,0.0,3590.1,162900.0,75.0,0.0375
+P000278,C02456,Scotland,Flat,1983-2012,115.2,2,B,Heat Pump,Moderate,Double,True,True,0.0,5766.2,389900.0,39.85,0.0108
+P000311,C00831,London,Terraced,Post-2012,63.7,2,C,Gas Boiler,Moderate,Double,False,True,11634.5,1649.2,454400.0,75.0,0.0565
+P000316,C02839,North West,Detached,1930-1982,117.6,2,D,Gas Boiler,Moderate,Double,False,True,15149.0,4679.1,429100.0,74.18,0.0514
+P000336,C03357,Wales,Terraced,1930-1982,75.7,1,B,Gas Boiler,Good,Double,False,True,6966.6,2956.6,256000.0,75.0,0.0293
+P000342,C02960,Scotland,Semi-Detached,Post-2012,57.6,2,E,Gas Boiler,Moderate,Single,False,False,11554.5,2117.6,218500.0,75.0,0.0609
+P000352,C01632,North West,Flat,1930-1982,58.4,2,C,Gas Boiler,Poor,Double,False,False,11775.4,1480.7,245600.0,75.0,0.043
+P000364,C03747,Midlands,Terraced,1930-1982,71.0,1,D,Gas Boiler,Moderate,Double,False,True,12975.5,2234.0,243900.0,75.0,0.0528
+P000367,C04001,Scotland,Semi-Detached,1983-2012,145.4,3,D,Gas Boiler,Poor,Single,False,False,39492.0,4102.7,477400.0,75.0,0.0538
+P000373,C04108,North West,Flat,1930-1982,64.1,1,D,Gas Boiler,Moderate,Double,False,False,11713.1,1874.4,240700.0,75.0,0.0517
+P000377,C00754,South East,Semi-Detached,Pre-1930,101.4,2,D,Gas Boiler,Moderate,Single,False,True,17886.9,3215.0,518000.0,75.0,0.0491
+P000378,C02083,Scotland,Detached,1930-1982,59.5,1,C,Gas Boiler,Moderate,Double,False,False,9678.0,1582.1,219900.0,75.0,0.0574
+P000382,C00776,South East,Semi-Detached,1930-1982,162.9,4,D,Gas Boiler,Moderate,Double,False,False,21105.0,5698.1,829800.0,72.87,0.0515
+P000387,C00617,Midlands,Semi-Detached,1983-2012,119.3,2,F,Gas Boiler,Moderate,Single,False,False,19534.2,4172.8,424000.0,75.0,0.0636
+P000392,C03147,North West,Detached,1930-1982,201.0,4,D,Electric Storage,Poor,Double,False,False,34952.2,5853.4,724400.0,75.0,0.0531
+P000394,C00729,South East,Semi-Detached,1930-1982,52.3,2,B,Gas Boiler,Good,Double,True,True,6659.8,1188.5,293400.0,75.0,0.0263
+P000397,C00676,Wales,Semi-Detached,1930-1982,80.7,1,B,Gas Boiler,Good,Triple,True,True,8235.7,2000.2,267600.0,74.65,0.0188
+P000399,C02505,Scotland,Detached,1930-1982,45.0,1,F,Oil Boiler,Poor,Single,False,False,10737.3,1303.3,157000.0,75.0,0.0882
+P000401,C02787,London,Semi-Detached,1983-2012,103.5,2,D,Gas Boiler,Moderate,Double,False,False,18098.1,3045.0,677900.0,75.0,0.0675
+P000415,C00729,London,Detached,1983-2012,88.8,2,D,Heat Pump,Poor,Double,False,False,0.0,8584.1,579300.0,66.07,0.0442
+P000438,C00954,North West,Flat,Post-2012,83.8,1,D,Gas Boiler,Good,Double,False,False,10418.8,2242.3,285700.0,75.0,0.0569
+P000474,C00895,Midlands,Terraced,1983-2012,107.1,2,C,Electric Storage,Good,Double,True,True,12697.3,1943.4,376100.0,75.0,0.0512
+P000485,C00134,London,Detached,Post-2012,63.8,1,C,Gas Boiler,Moderate,Double,False,False,8406.2,1964.7,423400.0,75.0,0.0396
+P000489,C04176,London,Semi-Detached,1983-2012,156.3,3,D,Gas Boiler,Moderate,Double,True,True,26030.1,3334.9,1011500.0,75.0,0.0545
+P000494,C03513,North West,Flat,Pre-1930,78.0,1,D,Gas Boiler,Moderate,Double,False,False,13415.0,2348.8,296200.0,75.0,0.0531
+P000502,C02704,South East,Detached,1983-2012,168.9,4,E,Gas Boiler,Poor,Double,False,False,29322.2,6427.1,851200.0,75.0,0.0535
+P000504,C01354,London,Detached,Pre-1930,54.5,1,A,Gas Boiler,Good,Double,True,True,5259.6,1223.7,377700.0,75.0,0.01
+P000537,C04001,Scotland,Semi-Detached,1930-1982,56.7,2,D,Gas Boiler,Poor,Double,False,False,12378.4,1832.4,235500.0,75.0,0.0418
+P000560,C00771,Scotland,Semi-Detached,Post-2012,45.0,1,D,Heat Pump,Moderate,Double,False,False,0.0,2820.9,179900.0,71.64,0.0655
+P000562,C01985,Midlands,Detached,1930-1982,101.3,2,D,Gas Boiler,Moderate,Single,False,False,20859.1,2987.9,370400.0,75.0,0.0498
+P000579,C01332,Scotland,Semi-Detached,1983-2012,73.6,2,G,Gas Boiler,Poor,Single,False,False,17409.4,2844.2,247400.0,75.0,0.0947
+P000583,C02181,London,Terraced,1930-1982,133.1,3,C,Electric Storage,Poor,Double,False,True,25291.6,4508.8,889400.0,75.0,0.022
+P000588,C03032,London,Semi-Detached,1930-1982,67.2,1,C,Gas Boiler,Moderate,Double,False,False,11817.0,1707.2,459500.0,75.0,0.0332
+P000590,C02594,London,Terraced,1930-1982,54.1,2,C,Gas Boiler,Moderate,Double,False,False,9196.4,2059.0,395000.0,75.0,0.0367
+P000614,C03118,Scotland,Detached,1983-2012,120.4,2,E,Oil Boiler,Moderate,Double,False,False,22057.2,3121.3,393700.0,75.0,0.0678
+P000615,C02594,London,Semi-Detached,Pre-1930,83.0,1,B,Heat Pump,Good,Double,True,True,0.0,3382.2,539400.0,26.95,0.0167
+P000617,C01754,Midlands,Detached,1983-2012,89.2,2,C,Gas Boiler,Moderate,Double,False,False,11962.8,2589.0,321800.0,75.0,0.0176
+P000620,C02287,North West,Semi-Detached,Pre-1930,56.7,1,D,Gas Boiler,Poor,Single,False,False,16046.8,1444.3,220300.0,75.0,0.05
+P000622,C02879,Midlands,Terraced,1930-1982,61.2,1,E,Gas Boiler,Poor,Single,False,False,12536.2,1974.7,230800.0,75.0,0.074
+P000623,C04144,South East,Semi-Detached,1930-1982,131.2,3,F,Gas Boiler,Poor,Single,False,False,37332.2,3316.6,681700.0,75.0,0.0863
+P000626,C01277,North West,Terraced,1930-1982,64.3,1,F,Electric Storage,Poor,Single,False,False,18139.9,2003.4,255600.0,75.0,0.0897
+P000628,C00303,London,Flat,Pre-1930,79.6,1,C,Gas Boiler,Good,Double,False,False,7791.9,2170.4,520600.0,75.0,0.0311
+P000662,C02740,Wales,Terraced,1930-1982,140.0,3,E,Oil Boiler,Poor,Single,False,False,38621.9,3703.7,433900.0,75.0,0.0576
+P000665,C01976,Midlands,Semi-Detached,Post-2012,82.7,2,D,Electric Storage,Good,Double,False,True,7455.3,3267.4,313800.0,73.56,0.0396
+P000685,C01064,Scotland,Semi-Detached,1930-1982,69.6,1,D,Gas Boiler,Moderate,Double,True,False,9017.0,1410.3,232700.0,75.0,0.0663
+P000710,C00902,Wales,Semi-Detached,Pre-1930,114.1,2,F,Electric Storage,Poor,Double,False,False,20487.5,4470.7,350600.0,75.0,0.0559
+P000724,C01995,Midlands,Terraced,1930-1982,59.2,1,D,Gas Boiler,Moderate,Double,True,False,8109.6,1403.6,218100.0,75.0,0.035
+P000742,C03644,Midlands,Semi-Detached,1983-2012,89.2,2,C,Electric Storage,Moderate,Double,False,False,13757.6,2338.8,331900.0,75.0,0.028
+P000743,C03851,South East,Semi-Detached,1930-1982,88.4,2,D,Gas Boiler,Moderate,Double,False,False,15478.0,2869.3,468300.0,75.0,0.04
+P000753,C02137,Scotland,Flat,1930-1982,96.3,2,D,Electric Storage,Poor,Double,False,True,20517.3,2572.3,343000.0,75.0,0.0419
+P000758,C03598,South East,Semi-Detached,Post-2012,142.5,3,C,Gas Boiler,Good,Double,True,False,17143.7,2776.8,725600.0,73.22,0.042
+P000768,C03688,Wales,Terraced,1983-2012,115.5,2,D,Gas Boiler,Good,Double,False,True,13462.3,4200.9,362100.0,74.02,0.036
+P000770,C04019,London,Detached,1930-1982,111.7,2,D,Heat Pump,Moderate,Single,False,True,0.0,9603.8,735500.0,63.28,0.0442
+P000781,C02205,Wales,Terraced,1930-1982,149.7,3,B,Heat Pump,Good,Triple,False,True,0.0,8126.4,480700.0,31.41,0.017
+P000785,C00951,Wales,Detached,1983-2012,61.1,2,C,Heat Pump,Moderate,Double,False,False,0.0,4084.1,217700.0,75.0,0.0407
+P000818,C03006,South East,Semi-Detached,Pre-1930,74.9,1,E,Gas Boiler,Poor,Double,False,False,14291.9,2086.7,374900.0,75.0,0.0784
+P000850,C01333,London,Semi-Detached,1930-1982,155.6,3,B,Gas Boiler,Good,Double,False,True,20023.9,4485.3,1022400.0,75.0,0.01
+P000885,C00952,Midlands,Semi-Detached,1983-2012,66.0,1,D,Gas Boiler,Moderate,Double,False,True,9916.8,2202.8,238300.0,75.0,0.0513
+P000886,C00723,London,Terraced,1930-1982,123.6,2,E,Gas Boiler,Poor,Single,False,False,28727.2,3575.2,777600.0,75.0,0.0632
+P000893,C00286,London,Terraced,1930-1982,46.3,1,D,Gas Boiler,Moderate,Double,False,False,7806.6,1428.8,336100.0,75.0,0.0569
+P000904,C01902,South East,Terraced,1930-1982,88.0,3,C,Gas Boiler,Moderate,Double,False,False,11331.9,2309.1,489700.0,75.0,0.0425
+P000907,C00055,South East,Semi-Detached,Pre-1930,68.2,1,D,Gas Boiler,Moderate,Double,False,True,12414.2,2313.7,365100.0,75.0,0.0465
+P000923,C03984,Wales,Detached,1983-2012,126.9,3,C,Gas Boiler,Good,Double,False,True,15159.5,4572.3,412700.0,73.42,0.0206
+P000927,C00775,Wales,Detached,1930-1982,129.6,3,E,Gas Boiler,Poor,Single,False,False,35103.4,3629.1,424700.0,75.0,0.0714
+P000946,C01388,South East,Semi-Detached,Post-2012,45.0,2,E,Gas Boiler,Poor,Double,False,False,10653.4,1379.7,275000.0,75.0,0.0706
+P000948,C02680,North West,Semi-Detached,1983-2012,45.0,1,C,Gas Boiler,Moderate,Single,False,False,8632.2,1357.4,190000.0,75.0,0.0406
+P000958,C00237,London,Detached,Pre-1930,84.6,3,C,Gas Boiler,Poor,Double,False,False,20861.1,3265.6,598100.0,75.0,0.0314
+P000962,C02542,South East,Flat,1983-2012,80.7,1,B,Gas Boiler,Good,Double,True,True,7321.9,1572.3,406700.0,75.0,0.0328
+P000965,C02077,London,Detached,1983-2012,136.8,3,D,Gas Boiler,Moderate,Double,True,False,18961.0,2916.9,905100.0,75.0,0.0529
+P000968,C03799,North West,Terraced,Pre-1930,115.4,2,D,Gas Boiler,Poor,Double,True,True,20216.3,2387.5,427800.0,75.0,0.061
+P000976,C01623,South East,Semi-Detached,1930-1982,69.0,1,C,Electric Storage,Moderate,Double,False,False,9344.5,2701.1,352800.0,75.0,0.043
+P000982,C00455,Scotland,Terraced,Pre-1930,48.0,1,C,Gas Boiler,Moderate,Double,False,True,8102.3,1878.7,184300.0,75.0,0.0338
+P000989,C03630,North West,Flat,Post-2012,153.9,3,D,Gas Boiler,Moderate,Double,False,False,21484.8,4805.9,564100.0,75.0,0.0582
+P000992,C01387,South East,Semi-Detached,Post-2012,107.4,3,C,Electric Storage,Good,Double,False,False,11627.2,2964.2,592400.0,75.0,0.0499
+P000998,C03851,London,Semi-Detached,1983-2012,93.2,2,D,Heat Pump,Moderate,Double,False,True,0.0,6898.2,626500.0,50.55,0.0615
+P001011,C03921,London,Semi-Detached,1930-1982,133.3,3,F,Gas Boiler,Poor,Single,False,False,35921.6,5215.7,870200.0,75.0,0.086
+P001032,C03116,South East,Terraced,Pre-1930,126.8,3,B,Heat Pump,Good,Double,True,True,0.0,5257.9,665000.0,14.43,0.0312
+P001038,C04108,Wales,Semi-Detached,1983-2012,73.8,1,C,Gas Boiler,Poor,Single,False,False,16437.6,1887.6,244400.0,75.0,0.0403
+P001040,C03664,London,Semi-Detached,1983-2012,64.5,1,C,Gas Boiler,Moderate,Double,False,True,9041.3,2312.3,447200.0,75.0,0.0221
+P001041,C00216,London,Semi-Detached,Post-2012,73.2,1,C,Gas Boiler,Moderate,Single,False,True,12749.6,1981.9,478300.0,75.0,0.0291
+P001051,C03994,Wales,Terraced,Pre-1930,126.5,4,F,Gas Boiler,Poor,Double,False,False,24702.2,3991.5,426000.0,75.0,0.0839
+P001056,C03991,North West,Detached,Pre-1930,94.4,2,D,Electric Storage,Moderate,Double,False,True,15425.6,2784.8,369900.0,75.0,0.0426
+P001072,C00615,South East,Detached,1930-1982,89.3,2,D,Gas Boiler,Moderate,Double,False,True,15841.6,2942.7,473400.0,75.0,0.0505
+P001088,C00739,North West,Semi-Detached,1930-1982,64.4,1,B,Heat Pump,Moderate,Double,True,True,0.0,3190.2,248200.0,49.19,0.0185
+P001099,C00272,North West,Flat,1930-1982,95.4,2,C,Gas Boiler,Moderate,Double,True,True,16474.5,1574.7,364900.0,75.0,0.0474
+P001102,C01263,North West,Terraced,1930-1982,103.8,2,B,Heat Pump,Moderate,Double,True,True,0.0,5424.0,375500.0,33.77,0.0233
+P001103,C02425,Midlands,Detached,1930-1982,116.8,2,C,Gas Boiler,Moderate,Double,False,False,14978.1,4374.3,421000.0,75.0,0.039
+P001124,C00807,Scotland,Semi-Detached,Pre-1930,68.7,1,F,Gas Boiler,Poor,Double,False,False,16536.9,2139.5,232600.0,75.0,0.0701
+P001131,C01390,London,Semi-Detached,1930-1982,82.5,1,C,Gas Boiler,Moderate,Double,False,False,14397.7,2641.2,540200.0,75.0,0.048
+P001141,C00727,London,Semi-Detached,1930-1982,45.0,1,E,Gas Boiler,Poor,Single,False,False,12468.3,1295.1,317100.0,75.0,0.0529
+P001145,C01597,South East,Detached,Pre-1930,60.1,2,D,Heat Pump,Moderate,Double,False,False,0.0,4491.7,344700.0,69.72,0.0518
+P001150,C02110,Wales,Detached,1930-1982,144.0,3,C,Gas Boiler,Moderate,Single,True,False,25964.9,2361.3,447300.0,75.0,0.0418
+P001152,C04070,South East,Semi-Detached,1930-1982,46.9,1,D,Gas Boiler,Moderate,Double,True,True,6445.9,1006.4,263200.0,75.0,0.0629
+P001173,C03973,South East,Terraced,Pre-1930,108.7,2,E,Oil Boiler,Poor,Double,False,False,22032.4,3276.6,566600.0,75.0,0.0572
+P001183,C00318,Midlands,Flat,Pre-1930,112.5,2,D,Gas Boiler,Moderate,Double,True,True,15470.8,2131.6,394200.0,75.0,0.0458
+P001192,C01286,London,Semi-Detached,1930-1982,203.3,4,D,Gas Boiler,Moderate,Double,True,True,26509.5,4499.0,1311100.0,69.35,0.06
+P001201,C02470,London,Flat,1930-1982,103.4,2,B,Heat Pump,Good,Triple,True,True,0.0,4103.6,679400.0,0.3,0.0238
+P001205,C02720,South East,Semi-Detached,Pre-1930,62.8,1,D,Heat Pump,Moderate,Double,True,False,0.0,3017.6,334300.0,49.31,0.0644
+P001207,C03742,South East,Semi-Detached,1983-2012,77.5,2,E,Gas Boiler,Moderate,Double,False,False,12450.6,2291.0,426500.0,75.0,0.0604
+P001215,C01548,London,Semi-Detached,1983-2012,72.9,1,C,Gas Boiler,Moderate,Double,False,True,9779.8,2311.6,490600.0,75.0,0.0431
+P001218,C03118,Wales,Detached,Pre-1930,89.3,2,C,Gas Boiler,Poor,Double,False,False,20516.7,2658.3,301200.0,75.0,0.0339
+P001238,C02753,London,Detached,1983-2012,121.9,2,D,Gas Boiler,Moderate,Single,False,False,18760.3,3566.7,794400.0,75.0,0.0403
+P001242,C00687,Midlands,Flat,1930-1982,120.4,3,D,Gas Boiler,Poor,Double,False,False,22050.7,4613.3,445300.0,75.0,0.0438
+P001248,C00029,South East,Detached,Pre-1930,70.2,1,C,Gas Boiler,Moderate,Double,False,True,11060.6,2317.2,359200.0,75.0,0.0539
+P001257,C03357,Midlands,Semi-Detached,1930-1982,87.9,2,D,Gas Boiler,Poor,Single,False,False,24418.5,2415.1,322500.0,75.0,0.0479
+P001263,C02205,South East,Semi-Detached,1983-2012,104.9,2,C,Gas Boiler,Moderate,Single,False,False,22067.8,3121.8,538100.0,75.0,0.041
+P001275,C04117,London,Terraced,1930-1982,60.4,1,C,Gas Boiler,Moderate,Double,False,False,9663.4,1861.5,409400.0,75.0,0.0256
+P001283,C01981,South East,Semi-Detached,Pre-1930,73.6,1,C,Gas Boiler,Moderate,Double,True,True,11233.3,1782.6,374500.0,75.0,0.0454
+P001291,C01608,Wales,Detached,1930-1982,89.1,2,F,Gas Boiler,Moderate,Single,False,False,18634.3,2883.7,295300.0,75.0,0.0839
+P001306,C03345,London,Detached,Post-2012,77.7,1,B,Heat Pump,Good,Double,True,True,0.0,2743.4,521700.0,34.87,0.01
+P001322,C01390,Wales,Semi-Detached,1983-2012,188.9,4,E,Gas Boiler,Poor,Single,False,False,48993.7,6116.6,604600.0,75.0,0.0712
+P001326,C00729,Midlands,Detached,1930-1982,66.4,1,C,Gas Boiler,Moderate,Double,True,True,9928.5,1464.6,220000.0,75.0,0.0364
+P001336,C03118,London,Flat,1983-2012,69.5,1,C,Gas Boiler,Good,Double,False,True,8015.4,1771.3,476400.0,75.0,0.0319
+P001357,C00317,Midlands,Semi-Detached,Pre-1930,92.9,3,C,Gas Boiler,Good,Double,False,False,9391.7,3612.9,348200.0,73.58,0.0371
+P001367,C01714,North West,Terraced,Post-2012,53.0,1,D,Gas Boiler,Moderate,Double,False,False,8252.5,1354.7,203000.0,75.0,0.0495
+P001372,C02431,Midlands,Terraced,Pre-1930,94.3,2,E,Oil Boiler,Poor,Single,False,False,22796.1,3512.2,351600.0,75.0,0.0666
+P001373,C02055,London,Detached,1983-2012,94.0,2,D,Gas Boiler,Moderate,Double,True,True,12643.0,2393.1,633900.0,75.0,0.0595
+P001375,C00208,North West,Detached,Pre-1930,46.7,1,B,Heat Pump,Good,Triple,True,True,0.0,1850.8,174900.0,56.78,0.0205
+P001381,C00895,North West,Detached,1983-2012,79.1,1,E,Oil Boiler,Moderate,Double,False,False,13661.6,2927.3,291000.0,75.0,0.0554
+P001385,C03596,Wales,Detached,1930-1982,61.8,1,B,Gas Boiler,Good,Double,True,False,6117.8,1495.6,217900.0,75.0,0.0318
+P001390,C03639,Midlands,Detached,Pre-1930,45.0,2,C,Gas Boiler,Poor,Single,False,True,9273.6,1685.2,208900.0,75.0,0.0401
+P001400,C01990,South East,Semi-Detached,1930-1982,59.2,2,C,Gas Boiler,Moderate,Double,False,False,9585.9,1881.2,315800.0,75.0,0.0385
+P001413,C00957,London,Detached,1930-1982,148.4,3,D,Gas Boiler,Moderate,Double,False,False,25209.7,5424.4,973900.0,75.0,0.0489
+P001417,C01388,London,Terraced,1930-1982,65.1,1,D,Gas Boiler,Good,Double,False,False,8173.9,2494.4,422100.0,75.0,0.0541
+P001439,C00940,Midlands,Detached,1930-1982,144.6,4,C,Gas Boiler,Moderate,Double,False,False,26602.3,3815.8,532400.0,75.0,0.0251
+P001444,C04006,North West,Detached,Pre-1930,151.5,3,F,Gas Boiler,Poor,Single,False,False,38213.8,5448.0,556000.0,75.0,0.0817
+P001464,C03467,South East,Semi-Detached,1983-2012,87.6,2,F,Gas Boiler,Poor,Double,False,False,20442.4,3125.5,440100.0,75.0,0.0777
+P001467,C00630,Midlands,Detached,Post-2012,87.9,2,C,Gas Boiler,Moderate,Double,True,False,12914.1,1850.8,318600.0,75.0,0.036
+P001473,C01281,London,Semi-Detached,1930-1982,45.0,2,G,Electric Storage,Poor,Double,False,False,9098.2,1625.5,327200.0,75.0,0.1011
+P001491,C00957,North West,Semi-Detached,1983-2012,84.6,2,C,Electric Storage,Poor,Single,False,False,20079.1,3265.3,317000.0,75.0,0.0243
+P001525,C01519,Midlands,Semi-Detached,1983-2012,163.3,3,D,Gas Boiler,Moderate,Double,False,True,25642.2,4438.9,575100.0,75.0,0.0491
+P001533,C00303,North West,Semi-Detached,1930-1982,59.8,2,B,Heat Pump,Good,Triple,True,True,0.0,1995.1,254300.0,59.9,0.0208
+P001556,C04115,Scotland,Detached,1983-2012,55.6,1,C,Gas Boiler,Good,Double,False,False,5895.7,1399.6,214400.0,75.0,0.0457
+P001558,C01001,Wales,Semi-Detached,1930-1982,94.0,2,D,Gas Boiler,Moderate,Double,True,False,17156.6,1704.1,301300.0,75.0,0.0437
+P001561,C03713,North West,Semi-Detached,Pre-1930,136.3,3,C,Gas Boiler,Moderate,Double,False,True,23606.1,5400.7,493900.0,75.0,0.0403
+P001564,C00455,North West,Detached,Post-2012,155.8,4,B,Heat Pump,Moderate,Double,True,True,0.0,8322.6,588400.0,20.85,0.0351
+P001569,C04090,Midlands,Semi-Detached,1983-2012,105.1,2,F,Electric Storage,Poor,Single,False,False,27427.1,3426.1,375400.0,75.0,0.0799
+P001575,C00736,Midlands,Terraced,Pre-1930,99.5,3,B,Heat Pump,Good,Triple,True,True,0.0,3528.3,355400.0,29.42,0.0189
+P001577,C03339,Wales,Terraced,1930-1982,81.9,1,D,Electric Storage,Good,Double,False,True,7890.5,2304.9,245400.0,75.0,0.0459
+P001586,C02502,South East,Semi-Detached,Pre-1930,86.3,2,E,Gas Boiler,Moderate,Single,False,False,15095.5,3443.2,458400.0,75.0,0.0694
+P001587,C01948,South East,Detached,1983-2012,78.6,1,C,Heat Pump,Moderate,Single,True,True,0.0,3872.6,402800.0,50.85,0.0278
+P001612,C02542,Midlands,Semi-Detached,1983-2012,81.6,1,C,Gas Boiler,Moderate,Double,False,True,11574.7,2933.2,286500.0,75.0,0.0314
+P001659,C03504,South East,Terraced,1983-2012,95.2,2,G,Gas Boiler,Moderate,Double,False,False,15445.7,2824.5,489900.0,75.0,0.1016
+P001660,C02853,North West,Detached,1930-1982,63.6,1,D,Gas Boiler,Good,Double,False,False,8049.5,1684.4,235700.0,75.0,0.0423
+P001666,C02638,Scotland,Flat,1930-1982,69.7,1,D,Gas Boiler,Moderate,Double,False,False,12500.5,2041.8,236500.0,75.0,0.0493
+P001672,C03907,London,Semi-Detached,Pre-1930,107.7,2,D,Gas Boiler,Moderate,Double,False,False,18362.9,2950.8,704300.0,75.0,0.0513
+P001694,C01736,South East,Semi-Detached,1930-1982,85.1,2,C,Heat Pump,Moderate,Double,False,True,0.0,5721.8,455300.0,65.92,0.0318
+P001695,C01586,South East,Terraced,1930-1982,213.9,5,B,Heat Pump,Good,Triple,True,True,0.0,10143.4,1081800.0,0.74,0.0197
+P001699,C04154,North West,Detached,Pre-1930,77.6,2,C,Heat Pump,Moderate,Double,False,True,0.0,5007.0,294500.0,67.63,0.0327
+P001716,C00208,London,Flat,1930-1982,63.5,1,D,Heat Pump,Moderate,Double,False,False,0.0,4618.7,430000.0,75.0,0.0634
+P001721,C02960,South East,Detached,1930-1982,126.6,3,E,Gas Boiler,Poor,Single,False,False,30861.7,3181.6,648300.0,75.0,0.0655
+P001727,C00237,Wales,Terraced,1930-1982,264.1,5,C,Gas Boiler,Good,Single,False,False,28357.4,7176.0,802100.0,68.26,0.0521
+P001732,C00286,Midlands,Semi-Detached,Post-2012,111.9,2,B,Heat Pump,Moderate,Double,False,True,0.0,9559.6,382900.0,51.32,0.01
+P001756,C04108,South East,Flat,Post-2012,94.6,2,F,Electric Storage,Poor,Single,False,False,19414.9,2398.1,481900.0,75.0,0.0855
+P001765,C00134,London,Semi-Detached,1930-1982,152.3,3,E,Gas Boiler,Poor,Single,False,False,34943.9,5817.8,993200.0,75.0,0.075
+P001780,C02530,South East,Semi-Detached,1983-2012,67.0,1,C,Electric Storage,Moderate,Double,False,True,10595.3,2036.0,346200.0,75.0,0.0325
+P001790,C03604,North West,Detached,Pre-1930,172.3,4,D,Gas Boiler,Poor,Single,False,False,47373.5,4657.2,642700.0,75.0,0.061
+P001792,C02495,South East,Detached,Pre-1930,59.4,2,D,Heat Pump,Poor,Double,False,True,0.0,4996.9,326500.0,75.0,0.0565
+P001793,C02720,Scotland,Semi-Detached,1983-2012,116.8,3,C,Gas Boiler,Moderate,Single,False,False,20136.4,4577.4,432600.0,75.0,0.0474
+P001799,C03851,North West,Terraced,Post-2012,109.3,2,B,Heat Pump,Good,Triple,True,False,0.0,3683.9,411500.0,13.83,0.018
+P001806,C01180,Wales,Semi-Detached,1930-1982,72.1,1,D,Gas Boiler,Moderate,Double,False,False,12591.6,2761.8,244500.0,75.0,0.0585
+P001816,C03293,South East,Semi-Detached,1983-2012,115.0,2,E,Gas Boiler,Moderate,Single,False,False,17833.3,2985.8,596300.0,75.0,0.0737
+P001820,C03303,Midlands,Semi-Detached,1983-2012,65.9,2,C,Gas Boiler,Good,Double,False,True,8277.0,1670.9,277900.0,75.0,0.0306
+P001825,C03030,Midlands,Terraced,1983-2012,68.0,1,C,Gas Boiler,Poor,Double,False,False,14344.9,1752.4,237400.0,75.0,0.0426
+P001845,C03836,North West,Semi-Detached,1983-2012,120.6,2,C,Gas Boiler,Moderate,Double,True,False,15665.9,3078.2,426000.0,71.99,0.0438
+P001868,C00776,South East,Terraced,Post-2012,50.2,1,C,Electric Storage,Moderate,Double,False,True,6539.8,2004.6,272500.0,75.0,0.0372
+P001875,C01032,South East,Terraced,Pre-1930,76.8,2,B,Heat Pump,Good,Triple,True,True,0.0,2992.7,417600.0,25.95,0.01
+P001901,C01247,Scotland,Semi-Detached,1930-1982,59.4,1,F,Gas Boiler,Poor,Double,False,False,10748.9,2181.5,202100.0,75.0,0.0751
+P001913,C02217,North West,Detached,1930-1982,45.0,1,C,Gas Boiler,Good,Double,False,True,5188.1,1249.5,183900.0,75.0,0.0472
+P001922,C00781,North West,Detached,Pre-1930,53.1,2,D,Heat Pump,Poor,Double,False,False,0.0,4650.0,244500.0,75.0,0.0476
+P001924,C03984,South East,Detached,Pre-1930,132.5,3,C,Gas Boiler,Poor,Double,False,False,31684.2,3418.5,672100.0,75.0,0.0306
+P001932,C04041,Scotland,Semi-Detached,1983-2012,87.0,2,G,Electric Storage,Poor,Single,False,False,21548.7,2487.5,293200.0,75.0,0.0914
+P001941,C03989,London,Semi-Detached,1930-1982,45.0,1,C,Electric Storage,Moderate,Double,False,True,7241.7,1557.9,316100.0,75.0,0.0383
+P001949,C03469,Scotland,Terraced,1930-1982,82.7,1,C,Gas Boiler,Moderate,Single,False,False,16697.4,2657.8,281300.0,75.0,0.0371
+P001959,C03538,London,Semi-Detached,Post-2012,94.9,3,C,Gas Boiler,Poor,Double,False,True,20550.3,2497.5,630400.0,75.0,0.037
+P001964,C04184,London,Flat,1983-2012,151.3,3,D,Gas Boiler,Poor,Double,False,True,34785.4,4017.1,993400.0,75.0,0.0408
+P001971,C02744,Scotland,Flat,Pre-1930,133.4,4,D,Gas Boiler,Moderate,Double,False,False,23974.9,4354.9,468200.0,75.0,0.0555
+P002001,C02257,Midlands,Detached,Post-2012,124.7,2,C,Gas Boiler,Good,Double,False,True,11571.3,3683.1,419800.0,71.81,0.0282
+P002004,C02635,London,Detached,Pre-1930,124.9,3,C,Gas Boiler,Good,Double,False,True,14865.6,4024.3,834100.0,75.0,0.0219
+P002005,C03984,South East,Detached,1930-1982,45.0,1,D,Gas Boiler,Moderate,Double,True,True,6035.4,873.5,250000.0,75.0,0.04
+P002008,C01125,North West,Semi-Detached,1930-1982,117.9,3,C,Gas Boiler,Moderate,Double,True,True,19698.4,2768.0,458200.0,75.0,0.032
+P002011,C01405,South East,Terraced,1930-1982,73.0,1,D,Electric Storage,Good,Double,False,True,8146.3,2597.9,371000.0,75.0,0.0648
+P002013,C01930,Midlands,Terraced,1983-2012,93.8,2,C,Electric Storage,Moderate,Double,False,False,15385.3,3185.1,332000.0,75.0,0.0193
+P002025,C03293,South East,Terraced,Pre-1930,162.7,3,E,Gas Boiler,Poor,Double,False,False,31582.6,5443.0,804800.0,75.0,0.0691
+P002034,C04156,Wales,Detached,1930-1982,70.0,1,C,Gas Boiler,Good,Double,False,False,7992.0,2475.0,244100.0,75.0,0.0583
+P002037,C03391,London,Flat,Post-2012,116.8,2,D,Gas Boiler,Good,Double,False,True,11723.4,3082.2,746200.0,75.0,0.0484
+P002042,C00868,North West,Terraced,1983-2012,68.8,1,C,Gas Boiler,Moderate,Double,False,False,10038.5,2166.7,281100.0,75.0,0.027
+P002048,C00831,Scotland,Semi-Detached,Pre-1930,80.3,2,B,Gas Boiler,Good,Triple,True,True,8771.0,1745.2,301300.0,75.0,0.0219
+P002074,C03921,South East,Detached,Pre-1930,51.7,1,E,Oil Boiler,Poor,Single,False,False,13712.8,1456.7,271700.0,75.0,0.0472
+P002079,C00547,South East,Semi-Detached,1930-1982,92.6,2,D,Gas Boiler,Good,Single,False,False,11582.8,2423.2,485600.0,75.0,0.0449
+P002095,C00876,South East,Terraced,Pre-1930,160.2,3,C,Heat Pump,Moderate,Double,False,False,0.0,12909.4,789900.0,42.51,0.0489
+P002117,C04001,Midlands,Semi-Detached,1930-1982,113.4,3,C,Gas Boiler,Moderate,Double,False,True,16675.9,3777.6,422300.0,75.0,0.0248
+P002125,C03738,Scotland,Semi-Detached,1983-2012,54.3,2,D,Gas Boiler,Moderate,Double,False,False,9947.4,1818.7,212400.0,75.0,0.0433
+P002131,C01754,Midlands,Semi-Detached,Post-2012,45.0,1,B,Heat Pump,Good,Double,False,True,0.0,2995.2,191000.0,73.29,0.0184
+P002137,C00895,Wales,Semi-Detached,1930-1982,103.2,2,C,Gas Boiler,Moderate,Double,False,False,18966.8,3100.4,334700.0,75.0,0.0379
+P002149,C03589,London,Semi-Detached,Post-2012,133.0,4,E,Oil Boiler,Moderate,Single,False,False,19636.2,3817.2,904000.0,75.0,0.0734
+P002158,C01728,Midlands,Terraced,Pre-1930,107.8,2,C,Gas Boiler,Moderate,Double,False,True,16578.8,3207.9,373400.0,75.0,0.0357
+P002159,C02291,North West,Terraced,1930-1982,83.7,2,C,Heat Pump,Moderate,Single,False,True,0.0,6251.3,325000.0,60.24,0.0328
+P002174,C03971,London,Detached,1983-2012,61.5,1,E,Oil Boiler,Poor,Double,False,False,14588.2,1903.4,416400.0,75.0,0.0684
+P002193,C02925,Midlands,Semi-Detached,1983-2012,64.7,1,E,Oil Boiler,Poor,Single,False,False,17371.1,1760.3,235300.0,75.0,0.0565
+P002200,C03201,Midlands,Semi-Detached,1930-1982,118.5,2,D,Gas Boiler,Moderate,Double,False,True,20579.8,3822.1,411100.0,75.0,0.0555
+P002202,C00688,South East,Semi-Detached,Pre-1930,73.0,1,D,Gas Boiler,Moderate,Double,False,False,9592.0,2201.7,380100.0,75.0,0.043
+P002225,C03865,Midlands,Semi-Detached,1930-1982,69.3,2,D,Gas Boiler,Moderate,Double,True,True,12265.4,1237.5,288700.0,75.0,0.0381
+P002235,C01900,London,Semi-Detached,1983-2012,45.0,1,E,Oil Boiler,Poor,Double,False,False,10606.8,1386.1,317900.0,75.0,0.0777
+P002236,C02505,Midlands,Terraced,1930-1982,83.2,1,D,Gas Boiler,Moderate,Double,False,False,15078.5,2462.2,299200.0,75.0,0.0414
+P002250,C02594,Scotland,Terraced,Pre-1930,115.7,3,D,Electric Storage,Poor,Double,False,False,25775.4,4626.1,394500.0,75.0,0.0494
+P002258,C00931,Scotland,Flat,1983-2012,84.5,2,B,Heat Pump,Moderate,Triple,False,False,0.0,6011.8,309700.0,65.44,0.0153
+P002267,C02502,South East,Detached,1983-2012,116.9,2,D,Gas Boiler,Moderate,Double,False,True,15663.9,4281.4,580800.0,75.0,0.0518
+P002277,C00949,North West,Detached,1983-2012,132.1,3,F,Gas Boiler,Poor,Single,False,False,26084.6,3571.0,502900.0,75.0,0.0667
+P002318,C00286,North West,Terraced,Post-2012,86.0,2,D,Gas Boiler,Moderate,Double,False,False,13808.0,3190.9,331100.0,75.0,0.0516
+P002337,C01586,Midlands,Flat,1930-1982,66.1,1,D,Electric Storage,Good,Double,True,True,8269.6,1697.6,219700.0,75.0,0.0553
+P002372,C02999,Midlands,Semi-Detached,Pre-1930,55.3,1,C,Heat Pump,Good,Double,False,True,0.0,3161.1,202300.0,74.69,0.0328
+P002375,C04006,North West,Terraced,Pre-1930,183.8,4,E,Oil Boiler,Poor,Single,False,False,49167.8,5326.9,666300.0,75.0,0.0641
+P002406,C03630,South East,Terraced,1930-1982,135.1,3,C,Heat Pump,Poor,Double,False,False,0.0,12527.3,711800.0,61.64,0.0343
+P002410,C03692,South East,Terraced,1930-1982,101.6,2,C,Gas Boiler,Moderate,Single,False,False,20819.5,3355.0,539200.0,75.0,0.0332
+P002419,C03322,Midlands,Semi-Detached,Pre-1930,139.2,4,E,Gas Boiler,Poor,Single,False,False,32266.8,4785.9,505600.0,75.0,0.0741
+P002420,C00174,Midlands,Detached,1930-1982,116.0,2,F,Gas Boiler,Moderate,Double,False,False,16675.6,4215.0,393900.0,75.0,0.0906
+P002421,C03742,Scotland,Flat,1930-1982,50.6,1,B,Gas Boiler,Good,Double,False,True,4875.9,1803.8,189500.0,75.0,0.0255
+P002423,C00727,South East,Flat,1930-1982,54.4,1,F,Gas Boiler,Poor,Single,False,False,12305.1,1951.5,278700.0,75.0,0.0709
+P002449,C00771,North West,Semi-Detached,Pre-1930,112.0,2,F,Gas Boiler,Poor,Single,False,False,28895.8,4188.5,409200.0,75.0,0.0905
+P002451,C02502,Wales,Semi-Detached,Pre-1930,53.8,1,A,Heat Pump,Good,Triple,True,True,0.0,2202.9,180000.0,54.91,0.0212
+P002470,C02659,North West,Terraced,1930-1982,129.0,3,C,Heat Pump,Moderate,Double,False,False,0.0,10002.5,463300.0,41.22,0.0383
+P002490,C04001,North West,Semi-Detached,1983-2012,129.9,3,D,Gas Boiler,Moderate,Double,False,False,18537.5,4729.8,502300.0,75.0,0.0651
+P002499,C03220,London,Terraced,1983-2012,74.3,1,D,Heat Pump,Poor,Double,False,False,0.0,6072.7,489200.0,75.0,0.049
+P002520,C00443,London,Flat,1930-1982,83.8,1,B,Heat Pump,Good,Double,True,True,0.0,3732.2,570100.0,22.18,0.0267
+P002535,C00797,North West,Semi-Detached,1930-1982,106.8,2,D,Gas Boiler,Moderate,Double,False,False,16373.4,4147.2,393400.0,75.0,0.0458
+P002565,C01135,South East,Terraced,1930-1982,95.1,3,D,Gas Boiler,Moderate,Single,False,False,15883.3,3045.9,510300.0,75.0,0.0357
+P002568,C03836,North West,Semi-Detached,1983-2012,85.5,2,C,Gas Boiler,Moderate,Double,False,False,13077.7,2536.2,322400.0,75.0,0.0306
+P002591,C03830,South East,Detached,Pre-1930,143.2,3,C,Gas Boiler,Moderate,Double,False,True,18597.4,4391.0,730600.0,75.0,0.0401
+P002597,C00558,Midlands,Flat,1930-1982,108.5,2,C,Gas Boiler,Moderate,Double,True,True,13762.5,2456.5,384800.0,75.0,0.047
+P002599,C02195,South East,Flat,1983-2012,63.9,1,G,Electric Storage,Poor,Single,False,False,16483.1,2065.9,338800.0,75.0,0.0962
+P002608,C03803,North West,Terraced,1930-1982,92.6,3,B,Heat Pump,Good,Double,True,True,0.0,3404.3,359800.0,36.07,0.0172
+P002629,C03421,London,Terraced,1930-1982,60.2,1,D,Gas Boiler,Moderate,Double,False,True,9122.3,2406.5,399600.0,75.0,0.0525
+P002630,C03907,North West,Semi-Detached,1983-2012,48.1,1,D,Gas Boiler,Good,Double,False,True,4413.2,1260.8,193800.0,75.0,0.052
+P002644,C04115,South East,Flat,1930-1982,183.9,5,B,Heat Pump,Good,Double,True,False,0.0,6901.4,946300.0,2.07,0.01
+P002706,C01588,London,Semi-Detached,1930-1982,45.0,1,D,Gas Boiler,Moderate,Double,False,False,6913.2,1586.8,309600.0,75.0,0.0502
+P002722,C02342,South East,Flat,1930-1982,163.0,3,D,Gas Boiler,Moderate,Double,False,False,27512.2,5629.6,805300.0,75.0,0.0529
+P002732,C01107,South East,Flat,1930-1982,138.1,4,G,Gas Boiler,Poor,Double,False,False,26518.0,4704.1,729500.0,75.0,0.1052
+P002745,C03989,Midlands,Flat,Pre-1930,111.0,2,D,Heat Pump,Poor,Double,False,False,0.0,9347.8,391400.0,57.3,0.0523
+P002751,C01630,Wales,Semi-Detached,1983-2012,75.6,1,D,Electric Storage,Poor,Double,False,False,13167.8,2934.3,225800.0,75.0,0.0562
+P002754,C01125,South East,Flat,1983-2012,73.5,1,F,Oil Boiler,Poor,Single,False,False,17558.7,1858.8,372100.0,75.0,0.0907
+P002765,C00397,Scotland,Terraced,Post-2012,117.3,2,C,Gas Boiler,Moderate,Double,True,True,20489.2,2964.5,389900.0,75.0,0.0381
+P002775,C01773,Wales,Semi-Detached,1930-1982,78.2,1,C,Gas Boiler,Good,Double,False,False,9417.8,2564.0,252600.0,75.0,0.0329
+P002779,C00776,North West,Semi-Detached,1930-1982,100.2,2,C,Gas Boiler,Moderate,Double,False,False,14852.8,2975.6,388700.0,75.0,0.0323
+P002780,C00940,Scotland,Detached,1930-1982,56.5,1,B,Heat Pump,Good,Triple,True,True,0.0,2273.4,221100.0,59.8,0.0125
+P002786,C03324,North West,Semi-Detached,1930-1982,95.1,3,D,Gas Boiler,Moderate,Double,False,False,15549.7,3212.5,373300.0,75.0,0.0489
+P002812,C03905,North West,Detached,1983-2012,105.0,3,B,Heat Pump,Good,Double,True,True,0.0,3991.3,392800.0,19.69,0.0197
+P002831,C04026,Wales,Detached,1983-2012,63.3,2,E,Oil Boiler,Poor,Single,False,False,14714.6,2413.8,220200.0,75.0,0.0642
+P002833,C02804,Scotland,Semi-Detached,1983-2012,107.3,2,C,Gas Boiler,Moderate,Double,False,False,15174.0,3882.5,366500.0,75.0,0.0355
+P002837,C00973,Midlands,Detached,1983-2012,75.8,1,C,Gas Boiler,Moderate,Single,False,False,11724.1,2018.1,251500.0,75.0,0.0333
+P002848,C02205,Midlands,Terraced,1930-1982,66.3,1,D,Gas Boiler,Moderate,Double,False,True,10183.4,2183.3,242700.0,75.0,0.061
+P002861,C03872,Scotland,Detached,1930-1982,47.1,2,D,Gas Boiler,Moderate,Double,False,True,7520.3,1189.1,213500.0,75.0,0.057
+P002867,C03513,Scotland,Semi-Detached,1930-1982,45.0,1,C,Heat Pump,Moderate,Double,True,True,0.0,2230.2,167700.0,64.13,0.0387
+P002873,C01995,Midlands,Terraced,Pre-1930,53.4,1,F,Electric Storage,Moderate,Single,False,False,9863.6,1950.7,208400.0,75.0,0.0738
+P002874,C00491,London,Detached,Post-2012,137.5,4,C,Gas Boiler,Moderate,Single,False,False,25424.5,4997.9,936700.0,75.0,0.0294
+P002877,C00216,Midlands,Semi-Detached,1983-2012,51.8,2,C,Electric Storage,Good,Double,False,True,6528.0,1304.4,216900.0,75.0,0.0364
+P002889,C02470,Scotland,Flat,Pre-1930,82.4,2,B,Heat Pump,Good,Double,True,False,0.0,3227.7,299600.0,40.08,0.035
+P002916,C02744,Midlands,Detached,Pre-1930,108.2,2,C,Gas Boiler,Good,Double,False,True,10663.4,3423.8,377000.0,74.24,0.0225
+P002925,C00797,Scotland,Semi-Detached,1983-2012,60.7,2,D,Electric Storage,Moderate,Double,False,True,10650.4,2305.2,220300.0,75.0,0.0604
+P002942,C00086,London,Flat,1930-1982,97.9,2,D,Gas Boiler,Moderate,Double,False,False,13485.7,3427.3,647200.0,75.0,0.055
+P002943,C03116,London,Terraced,1930-1982,61.5,1,C,Gas Boiler,Moderate,Double,True,True,7968.3,1450.8,407700.0,75.0,0.0455
+P002953,C02370,London,Terraced,1930-1982,48.1,1,D,Gas Boiler,Moderate,Double,False,True,7397.1,1830.7,316900.0,75.0,0.0594
+P002954,C03639,North West,Detached,Post-2012,69.1,1,F,Gas Boiler,Poor,Single,False,False,17211.4,2431.2,265100.0,75.0,0.0742
+P002973,C03907,North West,Semi-Detached,Post-2012,152.0,3,C,Heat Pump,Moderate,Double,False,True,0.0,12698.2,543000.0,46.47,0.0484
+P002977,C01630,London,Detached,1930-1982,221.1,5,C,Electric Storage,Good,Double,True,True,24319.9,5729.1,1452700.0,62.54,0.0242
+P002998,C01773,North West,Semi-Detached,Pre-1930,126.5,4,C,Gas Boiler,Moderate,Double,True,False,21937.7,2513.8,481000.0,75.0,0.0343
+P003004,C02330,Midlands,Terraced,1930-1982,55.5,2,D,Gas Boiler,Poor,Double,False,False,11474.6,2091.3,229300.0,75.0,0.0498
+P003011,C02839,South East,Detached,1930-1982,70.0,1,A,Gas Boiler,Good,Triple,True,True,5827.3,1214.3,373400.0,75.0,0.0104
+P003021,C00615,Wales,Semi-Detached,Pre-1930,68.9,2,C,Gas Boiler,Moderate,Double,False,False,11883.9,2241.4,261800.0,75.0,0.0277
+P003025,C00271,Midlands,Semi-Detached,Post-2012,134.2,3,C,Gas Boiler,Moderate,Double,False,False,17069.2,4591.4,463600.0,74.86,0.0281
+P003035,C03907,North West,Detached,Pre-1930,74.2,2,F,Gas Boiler,Poor,Single,False,False,18948.5,2053.2,279500.0,75.0,0.073
+P003040,C02925,North West,Semi-Detached,Post-2012,45.0,1,E,Electric Storage,Moderate,Single,False,False,8920.3,1550.3,182000.0,75.0,0.0657
+P003076,C00272,Wales,Semi-Detached,Post-2012,89.2,3,B,Heat Pump,Good,Triple,True,True,0.0,3641.7,316800.0,30.32,0.0194
+P003083,C03723,North West,Semi-Detached,1930-1982,84.1,3,C,Electric Storage,Moderate,Double,False,True,13282.3,2637.6,350200.0,75.0,0.0382
+P003087,C02553,North West,Flat,Post-2012,111.5,2,G,Oil Boiler,Poor,Single,False,False,31824.1,3718.0,399000.0,75.0,0.0951
+P003115,C01332,Wales,Terraced,1983-2012,62.7,2,D,Gas Boiler,Poor,Double,False,True,14902.7,2101.5,219000.0,75.0,0.0487
+P003126,C03921,North West,Semi-Detached,Post-2012,100.6,3,D,Gas Boiler,Moderate,Double,True,False,15941.3,2608.2,398900.0,75.0,0.0436
+P003131,C01152,North West,Flat,Pre-1930,85.5,2,E,Electric Storage,Poor,Single,False,False,23081.6,3180.3,333500.0,75.0,0.0621
+P003132,C00369,London,Semi-Detached,1930-1982,82.9,1,C,Gas Boiler,Good,Double,False,False,10504.5,2662.7,559000.0,75.0,0.0349
+P003134,C01908,South East,Terraced,Post-2012,94.2,3,D,Electric Storage,Moderate,Double,True,True,15194.7,1774.2,512900.0,75.0,0.0622
+P003154,C03664,London,Detached,1983-2012,63.1,1,C,Gas Boiler,Moderate,Double,False,False,8650.9,2271.8,435500.0,75.0,0.053
+P003165,C03278,Wales,Detached,1983-2012,72.7,1,D,Gas Boiler,Poor,Double,False,False,15860.0,2869.2,237100.0,75.0,0.0612
+P003172,C02379,Wales,Detached,Post-2012,162.1,3,C,Heat Pump,Moderate,Double,False,False,0.0,12139.1,502600.0,40.05,0.0372
+P003196,C01416,Wales,Flat,Pre-1930,45.0,1,D,Gas Boiler,Moderate,Double,False,False,7053.9,1663.0,173300.0,75.0,0.0449
+P003198,C02370,London,Detached,Pre-1930,139.4,4,C,Gas Boiler,Moderate,Single,True,False,22102.5,2271.1,940500.0,75.0,0.0216
+P003203,C03803,South East,Detached,Pre-1930,71.1,1,D,Gas Boiler,Moderate,Double,False,False,11052.0,2131.1,364600.0,75.0,0.0494
+P003207,C00208,Scotland,Flat,Pre-1930,45.0,1,G,Oil Boiler,Poor,Double,False,False,10052.5,1264.7,161500.0,75.0,0.1029
+P003212,C01519,North West,Detached,Pre-1930,45.0,1,E,Gas Boiler,Poor,Double,False,False,11023.9,1627.9,164300.0,75.0,0.0591
+P003214,C02196,Scotland,Flat,Pre-1930,79.5,2,C,Heat Pump,Moderate,Double,False,True,0.0,5251.7,300100.0,71.65,0.034
+P003224,C02306,South East,Detached,1930-1982,88.6,2,C,Gas Boiler,Moderate,Double,False,True,15538.7,2677.4,455900.0,75.0,0.0329
+P003245,C02094,South East,Semi-Detached,1930-1982,143.2,4,D,Gas Boiler,Moderate,Double,False,False,26054.5,5492.7,747000.0,75.0,0.0595
+P003262,C02425,Scotland,Semi-Detached,Pre-1930,125.7,2,C,Gas Boiler,Moderate,Double,False,True,22875.8,3384.0,408900.0,75.0,0.0456
+P003269,C00369,Wales,Flat,1930-1982,47.2,1,D,Electric Storage,Moderate,Double,False,False,6364.3,1841.5,169500.0,75.0,0.0388
+P003272,C01135,Midlands,Flat,Post-2012,45.0,1,C,Gas Boiler,Moderate,Double,False,False,8044.1,1182.4,184000.0,75.0,0.0253
+P003283,C01630,South East,Terraced,Pre-1930,123.5,2,C,Gas Boiler,Good,Double,True,True,13861.3,2139.2,631400.0,75.0,0.0305
+P003290,C02367,South East,Terraced,1930-1982,115.2,2,C,Gas Boiler,Moderate,Double,True,True,17664.7,2670.7,595500.0,75.0,0.0322
+P003298,C03822,London,Semi-Detached,1983-2012,123.6,2,D,Gas Boiler,Poor,Double,False,True,23242.1,3636.7,819700.0,75.0,0.0413
+P003314,C00742,North West,Detached,1930-1982,200.2,4,D,Gas Boiler,Moderate,Double,True,False,26517.7,3586.5,721100.0,73.35,0.0403
+P003325,C02136,Midlands,Flat,1930-1982,63.1,1,D,Gas Boiler,Good,Double,False,False,7207.9,2056.8,247200.0,75.0,0.0451
+P003328,C03075,Scotland,Semi-Detached,1930-1982,45.0,1,F,Gas Boiler,Poor,Double,False,False,8213.3,1402.1,185100.0,75.0,0.073
+P003330,C00121,South East,Terraced,1930-1982,76.9,2,C,Electric Storage,Moderate,Double,False,False,12916.9,2579.3,416700.0,75.0,0.0326
+P003344,C02331,South East,Detached,1930-1982,149.8,3,D,Heat Pump,Moderate,Double,False,True,0.0,11858.9,762000.0,41.25,0.0337
+P003349,C03391,Midlands,Terraced,1983-2012,58.3,2,B,Gas Boiler,Good,Double,True,True,6470.7,994.2,234500.0,75.0,0.0184
+P003372,C02505,Midlands,Semi-Detached,1983-2012,133.3,3,D,Gas Boiler,Moderate,Double,False,False,20647.1,3889.8,481800.0,75.0,0.0481
+P003374,C01701,South East,Detached,1983-2012,90.5,2,D,Gas Boiler,Good,Double,False,False,8280.8,3271.6,464900.0,73.74,0.0512
+P003376,C02701,South East,Terraced,Pre-1930,134.1,3,D,Gas Boiler,Moderate,Double,False,False,24194.1,3550.4,696400.0,75.0,0.0514
+P003377,C03630,South East,Flat,Pre-1930,167.7,3,C,Gas Boiler,Moderate,Double,False,True,23223.5,6086.1,851700.0,73.46,0.0468
+P003380,C03688,Scotland,Semi-Detached,1930-1982,72.6,1,E,Electric Storage,Poor,Double,False,False,12589.3,1887.7,259400.0,75.0,0.0712
+P003399,C02411,South East,Terraced,1930-1982,53.3,1,B,Heat Pump,Good,Triple,True,True,0.0,1884.3,290700.0,57.54,0.0208
+P003402,C03006,Wales,Semi-Detached,1930-1982,67.9,1,B,Heat Pump,Moderate,Triple,True,True,0.0,3076.3,237300.0,46.01,0.01
+P003419,C02688,Midlands,Semi-Detached,Pre-1930,68.5,1,E,Gas Boiler,Poor,Single,False,False,18869.7,2060.4,233800.0,75.0,0.0805
+P003434,C02680,Wales,Detached,1930-1982,89.8,2,D,Gas Boiler,Moderate,Double,False,True,12912.3,2770.1,302500.0,75.0,0.0594
+P003436,C03905,Scotland,Flat,1930-1982,137.7,3,D,Heat Pump,Moderate,Double,True,True,0.0,7867.4,465900.0,42.59,0.0641
+P003441,C01388,Midlands,Detached,1930-1982,92.6,2,D,Gas Boiler,Moderate,Single,False,False,14988.7,2625.5,319400.0,75.0,0.0458
+P003471,C00532,North West,Semi-Detached,Post-2012,69.9,1,E,Electric Storage,Poor,Double,False,False,11986.6,1877.3,272400.0,75.0,0.0645
+P003498,C03572,Scotland,Terraced,Pre-1930,89.3,2,C,Gas Boiler,Good,Double,False,False,11381.7,3284.4,299000.0,75.0,0.0311
+P003523,C01706,Scotland,Flat,Pre-1930,85.8,2,C,Gas Boiler,Moderate,Single,False,False,18065.0,2588.8,290000.0,75.0,0.0292
+P003527,C02576,London,Semi-Detached,1930-1982,189.9,5,F,Gas Boiler,Poor,Single,False,False,47650.3,6500.7,1237200.0,75.0,0.0861
+P003532,C01630,North West,Semi-Detached,Pre-1930,60.0,1,D,Gas Boiler,Moderate,Double,True,True,9388.3,1366.1,235500.0,75.0,0.0406
+P003545,C02553,London,Semi-Detached,1983-2012,113.2,2,D,Gas Boiler,Moderate,Double,False,False,17210.7,4255.9,755000.0,75.0,0.059
+P003547,C04035,London,Terraced,1983-2012,77.0,2,D,Gas Boiler,Moderate,Double,False,False,14149.7,2559.1,534200.0,75.0,0.0439
+P003549,C03989,South East,Terraced,1930-1982,110.8,3,D,Gas Boiler,Moderate,Double,False,True,20054.3,4421.7,586700.0,75.0,0.0479
+P003580,C02379,North West,Flat,1930-1982,49.4,1,D,Gas Boiler,Moderate,Double,False,True,8515.0,1303.8,214100.0,75.0,0.0566
+P003587,C00957,Wales,Detached,1930-1982,55.1,1,D,Electric Storage,Poor,Double,False,False,11726.3,1791.8,191900.0,75.0,0.0671
+P003614,C01597,Midlands,Flat,1983-2012,70.1,1,D,Gas Boiler,Moderate,Double,False,False,9928.6,2147.4,246500.0,75.0,0.048
+P003624,C01339,South East,Terraced,1930-1982,54.3,1,E,Gas Boiler,Poor,Single,False,False,12460.8,1681.4,311200.0,75.0,0.051
+P003631,C02962,South East,Semi-Detached,Post-2012,45.0,2,D,Gas Boiler,Moderate,Double,False,False,7764.0,1286.5,278800.0,75.0,0.0556
+P003635,C00940,London,Flat,1930-1982,64.9,1,E,Gas Boiler,Poor,Single,False,False,14795.1,2346.4,419600.0,75.0,0.0642
+P003653,C04001,South East,Terraced,Post-2012,108.6,2,G,Oil Boiler,Poor,Single,False,False,29139.6,3871.8,543300.0,75.0,0.0943
+P003656,C01320,Scotland,Terraced,1983-2012,125.9,3,C,Gas Boiler,Good,Double,True,False,11227.1,2487.7,415400.0,67.37,0.0292
+P003658,C02691,Midlands,Detached,1983-2012,130.1,3,A,Heat Pump,Good,Triple,True,True,0.0,5399.1,457000.0,8.71,0.0156
+P003672,C02388,North West,Terraced,1930-1982,162.6,4,C,Heat Pump,Moderate,Double,False,True,0.0,11546.3,604400.0,40.16,0.0371
+P003677,C01263,South East,Terraced,Pre-1930,45.0,1,E,Gas Boiler,Poor,Double,False,False,8156.3,1423.4,253300.0,75.0,0.0725
+P003694,C01095,South East,Semi-Detached,Post-2012,51.5,2,E,Oil Boiler,Poor,Double,False,False,11406.7,1295.4,299100.0,75.0,0.061
+P003702,C03971,Midlands,Semi-Detached,Pre-1930,107.8,2,D,Gas Boiler,Poor,Double,False,False,21393.9,4001.6,378100.0,75.0,0.0669
+P003723,C02431,South East,Semi-Detached,Pre-1930,128.9,4,D,Gas Boiler,Moderate,Double,False,True,18448.9,4692.2,693900.0,75.0,0.0603
+P003745,C00777,South East,Flat,Pre-1930,45.0,1,C,Gas Boiler,Moderate,Double,False,True,5782.5,1491.0,237800.0,75.0,0.0433
+P003747,C00688,London,Detached,1983-2012,47.1,1,C,Gas Boiler,Good,Double,False,False,4268.0,1786.0,344000.0,75.0,0.0451
+P003757,C03803,Wales,Flat,Pre-1930,131.5,3,C,Gas Boiler,Moderate,Double,False,False,22098.8,3712.2,433300.0,75.0,0.037
+P003764,C04144,South East,Semi-Detached,1983-2012,62.4,1,D,Gas Boiler,Moderate,Double,False,False,8488.2,1683.4,310000.0,75.0,0.0487
+P003765,C02960,Wales,Semi-Detached,Post-2012,122.5,2,C,Gas Boiler,Moderate,Double,False,True,19291.0,4787.5,398700.0,75.0,0.0356
+P003769,C02878,London,Detached,1930-1982,57.8,1,C,Gas Boiler,Moderate,Double,False,False,9456.5,2051.8,391800.0,75.0,0.025
+P003772,C02925,South East,Flat,1930-1982,63.0,1,C,Gas Boiler,Poor,Single,False,False,15155.9,2029.7,327800.0,75.0,0.0452
+P003828,C01135,North West,Semi-Detached,1930-1982,48.9,1,E,Gas Boiler,Poor,Single,False,False,13710.4,1349.6,216900.0,75.0,0.0749
+P003858,C02787,South East,Semi-Detached,1983-2012,45.0,1,B,Gas Boiler,Good,Triple,True,True,4475.5,800.0,246900.0,75.0,0.0236
+P003861,C03872,Wales,Flat,1930-1982,59.0,1,C,Gas Boiler,Poor,Double,False,False,11471.1,2153.8,191500.0,75.0,0.0358
+P003900,C04070,North West,Flat,1983-2012,137.5,3,B,Heat Pump,Good,Double,True,True,0.0,7013.9,514000.0,19.28,0.0151
+P003906,C03290,South East,Flat,Post-2012,85.3,2,A,Gas Boiler,Moderate,Triple,True,True,10474.2,1550.7,449900.0,75.0,0.01
+P003911,C03177,South East,Semi-Detached,Post-2012,114.6,3,C,Electric Storage,Moderate,Double,False,False,15969.3,3009.8,589400.0,75.0,0.0393
+P003913,C02748,North West,Semi-Detached,Post-2012,88.2,3,D,Gas Boiler,Good,Single,False,False,9995.1,3089.0,369400.0,75.0,0.0527
+P003919,C02495,Scotland,Semi-Detached,Pre-1930,100.9,2,E,Oil Boiler,Poor,Single,False,False,22585.8,2778.5,350900.0,75.0,0.0708
+P003920,C04006,London,Flat,1930-1982,45.0,1,C,Gas Boiler,Moderate,Double,False,True,5717.9,1135.0,304700.0,75.0,0.0236
+P003924,C02960,London,Terraced,Pre-1930,63.3,1,B,Heat Pump,Good,Double,False,True,0.0,3625.7,417400.0,75.0,0.0282
+P003928,C02797,South East,Detached,1930-1982,188.7,4,B,Heat Pump,Good,Double,True,True,0.0,9130.9,976300.0,3.43,0.01
+P003932,C03050,Midlands,Terraced,1930-1982,109.0,2,C,Gas Boiler,Moderate,Double,False,False,16802.7,3129.0,386800.0,75.0,0.027
+P003942,C00271,Scotland,Detached,Post-2012,90.0,2,C,Gas Boiler,Good,Double,False,True,9919.6,3042.4,322900.0,75.0,0.0295
+P003955,C03971,South East,Terraced,1983-2012,45.0,1,A,Heat Pump,Good,Triple,False,False,0.0,2664.0,250900.0,69.97,0.01
+P003961,C02342,Wales,Detached,1983-2012,60.9,1,C,Gas Boiler,Moderate,Double,False,True,9261.3,1816.0,189600.0,75.0,0.0194
+P003983,C02186,South East,Flat,1930-1982,120.3,2,B,Heat Pump,Good,Double,True,False,0.0,4062.6,604100.0,6.49,0.0238
+P003993,C00585,London,Flat,Pre-1930,96.1,2,C,Gas Boiler,Poor,Single,False,True,26252.0,3733.3,631100.0,75.0,0.0387
+P003994,C02800,London,Semi-Detached,1983-2012,70.1,2,F,Gas Boiler,Poor,Single,False,False,18596.6,2649.0,484700.0,75.0,0.083
+P004004,C02505,London,Detached,1930-1982,178.1,5,B,Heat Pump,Good,Triple,True,True,0.0,7300.2,1184000.0,0.0,0.013
+P004005,C00615,South East,Terraced,Post-2012,133.4,3,D,Electric Storage,Moderate,Double,True,False,18875.1,2910.6,677900.0,75.0,0.0518
+P004008,C01588,Scotland,Detached,Pre-1930,132.9,3,E,Oil Boiler,Poor,Single,False,False,33399.2,3464.9,459700.0,75.0,0.0571
+P004015,C03905,South East,Flat,1930-1982,45.0,1,B,Heat Pump,Good,Triple,False,False,0.0,2520.3,257900.0,68.26,0.0213
+P004021,C02659,South East,Detached,Pre-1930,140.6,3,C,Gas Boiler,Poor,Single,False,True,36933.0,4826.3,710100.0,75.0,0.0295
+P004030,C01263,London,Detached,Pre-1930,110.9,2,A,Heat Pump,Good,Double,True,True,0.0,4449.8,731700.0,13.8,0.0108
+P004041,C04102,Midlands,Terraced,Post-2012,149.6,4,C,Gas Boiler,Moderate,Double,False,False,23077.0,5568.3,545300.0,75.0,0.0469
+P004045,C03604,South East,Detached,1930-1982,97.3,2,E,Gas Boiler,Moderate,Single,False,False,15391.1,3550.7,505600.0,75.0,0.0807
+P004049,C01486,South East,Terraced,1930-1982,91.2,2,D,Gas Boiler,Good,Double,False,False,9506.0,2663.5,485000.0,75.0,0.0477
+P004052,C04115,London,Detached,1983-2012,125.5,2,D,Gas Boiler,Poor,Double,False,False,22706.5,4678.6,814700.0,75.0,0.0461
+P004065,C02403,Scotland,Terraced,Pre-1930,189.2,4,D,Gas Boiler,Poor,Double,True,False,44510.4,4464.0,624500.0,75.0,0.053
+P004068,C01152,South East,Flat,1983-2012,70.8,2,E,Electric Storage,Poor,Single,False,False,15670.6,2776.8,390700.0,75.0,0.0676
+P004085,C00876,Midlands,Semi-Detached,1930-1982,68.3,2,E,Electric Storage,Poor,Single,False,False,14355.6,2515.6,275900.0,75.0,0.07
+P004086,C02419,London,Semi-Detached,Post-2012,57.7,2,C,Gas Boiler,Moderate,Double,False,False,9131.9,2075.2,414900.0,75.0,0.0331
+P004101,C01976,Wales,Semi-Detached,1930-1982,68.0,1,C,Gas Boiler,Poor,Double,False,False,12691.3,1898.3,235100.0,75.0,0.0392
+P004103,C02542,London,Detached,Pre-1930,50.7,1,D,Electric Storage,Moderate,Double,False,True,6898.8,1441.3,345100.0,75.0,0.0456
+P004114,C01226,London,Semi-Detached,1930-1982,119.8,2,B,Gas Boiler,Good,Double,True,False,11289.5,2210.1,767200.0,71.15,0.0219
+P004120,C03723,Scotland,Terraced,1930-1982,45.0,1,B,Gas Boiler,Good,Double,True,False,4380.4,805.5,181400.0,75.0,0.0159
+P004127,C02502,South East,Detached,1983-2012,176.9,4,C,Gas Boiler,Good,Double,True,False,16898.3,3468.4,918300.0,64.36,0.0276
+P004134,C00973,Midlands,Semi-Detached,1930-1982,60.5,2,E,Oil Boiler,Poor,Single,False,False,14650.7,2111.9,242700.0,75.0,0.0609
+P004142,C01107,Scotland,Semi-Detached,1930-1982,89.7,2,C,Gas Boiler,Moderate,Double,False,False,13329.6,3438.4,338100.0,75.0,0.039
+P004150,C03097,Midlands,Terraced,1983-2012,77.2,1,A,Gas Boiler,Good,Triple,True,True,8693.4,1389.7,257000.0,75.0,0.0185
+P004181,C02331,Midlands,Terraced,1930-1982,99.9,3,D,Gas Boiler,Moderate,Double,False,True,16415.9,3405.2,380400.0,75.0,0.0547
+P004201,C01095,South East,Terraced,1930-1982,125.1,3,D,Heat Pump,Moderate,Double,False,True,0.0,9749.2,649000.0,50.21,0.0501
+P004203,C01405,Midlands,Semi-Detached,1930-1982,62.6,2,E,Oil Boiler,Poor,Single,False,False,14736.5,1915.4,231100.0,75.0,0.0678
+P004224,C00692,Scotland,Semi-Detached,1983-2012,45.0,1,D,Gas Boiler,Moderate,Single,False,False,9362.1,1426.1,171000.0,75.0,0.0394
+P004226,C00932,North West,Semi-Detached,1983-2012,74.9,1,A,Heat Pump,Good,Double,True,True,0.0,2758.1,265900.0,45.73,0.01
+P004229,C01033,South East,Semi-Detached,1983-2012,65.2,1,D,Gas Boiler,Moderate,Double,False,False,8578.3,1826.1,328300.0,75.0,0.0604
+P004234,C03589,North West,Flat,1930-1982,136.2,3,D,Gas Boiler,Moderate,Double,False,True,22837.3,5045.1,516900.0,75.0,0.0417
+P004253,C01908,North West,Semi-Detached,Pre-1930,107.5,2,D,Gas Boiler,Moderate,Double,False,False,14803.2,4260.4,388900.0,75.0,0.0558
+P004273,C01372,North West,Flat,Post-2012,94.1,2,E,Gas Boiler,Poor,Double,False,False,19191.5,3044.7,356500.0,75.0,0.0523
+P004299,C00185,North West,Flat,1983-2012,75.4,1,C,Electric Storage,Moderate,Double,True,False,10334.4,1597.3,298900.0,75.0,0.0266
+P004300,C02411,London,Terraced,Pre-1930,67.8,1,D,Heat Pump,Moderate,Single,False,False,0.0,6296.7,466200.0,73.44,0.0535
+P004306,C02553,Wales,Terraced,1983-2012,87.6,2,C,Gas Boiler,Moderate,Double,False,True,12346.0,3480.3,274600.0,75.0,0.0372
+P004308,C04156,Midlands,Terraced,Pre-1930,97.1,3,D,Gas Boiler,Poor,Single,False,True,25037.4,2817.2,361900.0,75.0,0.0615
+P004318,C02670,London,Terraced,Pre-1930,85.1,3,E,Gas Boiler,Poor,Double,False,False,15217.7,2447.0,585400.0,75.0,0.0757
+P004327,C02777,Midlands,Semi-Detached,1930-1982,45.0,2,D,Gas Boiler,Moderate,Single,False,False,6919.2,1261.3,197400.0,75.0,0.0456
+P004333,C00480,Wales,Detached,Post-2012,45.0,2,C,Gas Boiler,Poor,Single,False,False,10289.5,1509.3,189900.0,75.0,0.0285
+P004345,C03630,Midlands,Semi-Detached,1930-1982,119.6,2,C,Gas Boiler,Moderate,Double,False,True,21270.1,3812.3,405500.0,75.0,0.0353
+P004371,C00641,London,Semi-Detached,Pre-1930,58.5,1,D,Electric Storage,Moderate,Double,False,True,10431.4,2208.7,385700.0,75.0,0.066
+P004375,C02576,London,Flat,1930-1982,100.7,2,E,Gas Boiler,Poor,Double,False,False,22207.3,2622.7,666100.0,75.0,0.0618
+P004376,C03604,Scotland,Semi-Detached,1983-2012,87.8,2,B,Heat Pump,Good,Double,True,True,0.0,3224.6,292200.0,27.84,0.01
+P004386,C02077,South East,Terraced,Pre-1930,122.0,2,D,Gas Boiler,Good,Double,True,False,11981.0,2585.6,617100.0,68.92,0.0494
+P004396,C03513,London,Detached,Post-2012,85.5,3,C,Gas Boiler,Moderate,Single,False,True,12697.0,2360.1,594000.0,75.0,0.0331
+P004397,C01500,South East,Detached,Pre-1930,45.0,1,C,Gas Boiler,Poor,Double,True,True,10136.9,800.0,238200.0,75.0,0.0453
+P004403,C04040,North West,Detached,1930-1982,112.9,2,C,Gas Boiler,Good,Double,True,False,12650.9,2312.5,406100.0,74.07,0.0229
+P004409,C03991,London,Flat,1930-1982,183.5,4,C,Electric Storage,Moderate,Double,False,True,31799.8,4743.7,1192500.0,75.0,0.0459
+P004413,C02800,Wales,Terraced,1983-2012,67.6,2,D,Gas Boiler,Good,Double,False,True,6012.0,2035.4,248200.0,75.0,0.0516
+P004420,C03347,Scotland,Semi-Detached,1983-2012,99.4,2,F,Oil Boiler,Poor,Double,False,False,24624.2,3841.4,347300.0,75.0,0.0705
+P004424,C01908,North West,Terraced,Pre-1930,73.7,1,B,Gas Boiler,Good,Double,True,True,8272.1,1414.9,275600.0,75.0,0.0277
+P004443,C00381,South East,Detached,1930-1982,107.4,3,D,Electric Storage,Moderate,Double,False,False,18300.9,2761.8,564000.0,75.0,0.0417
+P004451,C02477,Scotland,Terraced,1983-2012,79.2,1,G,Oil Boiler,Poor,Double,False,False,14336.7,2183.3,267300.0,75.0,0.0964
+P004479,C03378,Midlands,Semi-Detached,Pre-1930,209.9,4,C,Gas Boiler,Poor,Double,False,True,51444.2,7847.6,694500.0,75.0,0.0375
+P004499,C02576,Midlands,Terraced,1930-1982,109.3,2,C,Gas Boiler,Moderate,Double,False,True,17622.1,3848.6,369000.0,75.0,0.033
+P004511,C02431,Wales,Semi-Detached,1930-1982,175.8,4,D,Gas Boiler,Moderate,Double,False,True,32109.4,6727.6,580800.0,75.0,0.048
+P004516,C01736,Midlands,Terraced,1983-2012,125.8,3,C,Gas Boiler,Moderate,Double,False,True,19048.2,5025.5,443500.0,75.0,0.0432
+P004520,C01125,North West,Semi-Detached,Pre-1930,127.1,3,B,Heat Pump,Good,Double,True,True,0.0,6677.7,481900.0,18.93,0.0259
+P004524,C01548,London,Semi-Detached,1983-2012,70.3,2,D,Gas Boiler,Good,Single,False,True,10222.8,2607.8,480500.0,75.0,0.0425
+P004538,C00271,South East,Terraced,1930-1982,84.4,2,F,Oil Boiler,Moderate,Single,False,False,17160.9,2296.4,448200.0,75.0,0.075
+P004554,C03097,Scotland,Terraced,Post-2012,145.9,3,A,Heat Pump,Good,Double,True,True,0.0,6788.0,498300.0,0.0,0.0101
+P004555,C03257,London,Semi-Detached,1930-1982,100.2,2,A,Heat Pump,Good,Double,True,True,0.0,4590.6,658400.0,20.04,0.01
+P004558,C04240,South East,Terraced,1930-1982,225.3,5,G,Gas Boiler,Poor,Single,False,False,56530.4,8728.9,1136000.0,75.0,0.0979
+P004565,C00954,North West,Detached,Pre-1930,59.7,1,B,Heat Pump,Good,Double,True,False,0.0,2518.4,221100.0,56.85,0.0172
+P004569,C00480,Scotland,Flat,1930-1982,45.0,1,C,Gas Boiler,Moderate,Double,False,True,7872.1,1444.8,162800.0,75.0,0.0354
+P004571,C01354,South East,Terraced,Post-2012,112.0,2,C,Gas Boiler,Moderate,Double,False,False,17013.2,4335.9,577500.0,75.0,0.0296
+P004580,C00029,Scotland,Detached,Pre-1930,45.0,1,A,Gas Boiler,Good,Double,False,False,4034.2,1704.3,187000.0,75.0,0.01
+P004624,C01451,North West,Terraced,Pre-1930,55.4,1,E,Gas Boiler,Moderate,Single,False,False,10805.6,1484.3,222000.0,75.0,0.0612
+P004625,C03097,London,Flat,1983-2012,57.1,1,B,Gas Boiler,Good,Double,True,True,7049.5,960.7,383800.0,75.0,0.01
+P004644,C03504,Midlands,Detached,Post-2012,107.4,2,C,Gas Boiler,Moderate,Double,False,False,15462.5,3971.7,381800.0,75.0,0.0363
+P004646,C02477,Scotland,Terraced,Post-2012,160.8,3,C,Gas Boiler,Moderate,Double,False,False,21533.5,4504.7,533400.0,75.0,0.0437
+P004670,C03347,London,Terraced,1983-2012,45.0,2,D,Gas Boiler,Moderate,Double,False,True,6232.8,1177.8,325100.0,75.0,0.0573
+P004688,C03630,Midlands,Semi-Detached,1930-1982,128.3,3,B,Heat Pump,Good,Triple,False,True,0.0,7078.1,461900.0,42.24,0.015
+P004704,C00491,South East,Terraced,1983-2012,134.9,3,C,Gas Boiler,Good,Double,False,False,16665.8,5029.7,697800.0,72.8,0.0335
+P004711,C03160,Midlands,Terraced,Pre-1930,45.0,1,E,Gas Boiler,Poor,Double,False,False,10551.4,1519.5,170500.0,75.0,0.0651
+P004714,C02388,London,Terraced,1930-1982,74.6,1,B,Heat Pump,Good,Double,True,True,0.0,2839.9,475700.0,46.39,0.0274
+P004719,C02581,Midlands,Detached,1930-1982,53.9,1,D,Electric Storage,Good,Single,False,True,6298.0,2129.7,200400.0,75.0,0.0578
+P004723,C03830,North West,Terraced,1930-1982,77.6,1,B,Gas Boiler,Good,Triple,True,True,8829.2,1495.8,299400.0,75.0,0.0196
+P004728,C04154,London,Semi-Detached,1983-2012,141.9,3,C,Gas Boiler,Good,Double,False,False,12925.9,5225.1,926000.0,65.44,0.0324
+P004735,C00902,London,Detached,1983-2012,55.6,1,C,Gas Boiler,Moderate,Single,False,False,11519.0,2082.2,384100.0,75.0,0.038
+P004744,C01908,Midlands,Detached,1983-2012,84.1,2,D,Gas Boiler,Moderate,Double,False,False,11845.9,2139.6,309700.0,75.0,0.0695
+P004749,C02477,Wales,Semi-Detached,1930-1982,98.6,2,C,Heat Pump,Moderate,Double,False,False,0.0,8110.4,299000.0,57.73,0.0608
+P004767,C01034,London,Flat,Pre-1930,113.0,3,C,Electric Storage,Moderate,Double,False,False,17317.5,3896.5,778100.0,75.0,0.037
+P004778,C00272,Midlands,Flat,Pre-1930,174.7,5,E,Gas Boiler,Poor,Single,False,False,36991.0,5241.8,630400.0,75.0,0.0688
+P004780,C03333,South East,Terraced,Post-2012,59.4,2,B,Heat Pump,Good,Double,False,True,0.0,3758.1,342300.0,70.13,0.0275
+P004783,C00623,Midlands,Semi-Detached,1930-1982,111.9,2,D,Gas Boiler,Good,Double,False,False,10717.2,3314.4,392000.0,74.26,0.049
+P004808,C03278,North West,Detached,Pre-1930,61.7,1,B,Heat Pump,Good,Triple,False,True,0.0,3699.8,232300.0,74.72,0.0151
+P004833,C04240,Scotland,Semi-Detached,1983-2012,117.4,2,C,Gas Boiler,Poor,Double,False,False,27585.4,3651.7,391600.0,75.0,0.0325
+P004848,C03775,South East,Semi-Detached,1930-1982,80.5,1,C,Gas Boiler,Moderate,Double,False,True,13939.8,2158.5,410800.0,75.0,0.0371
+P004850,C00973,Wales,Detached,1930-1982,45.0,1,C,Gas Boiler,Moderate,Single,True,False,6628.8,800.0,166900.0,75.0,0.029
+P004852,C02594,North West,Semi-Detached,1983-2012,117.5,2,F,Electric Storage,Poor,Single,False,False,27378.2,3470.3,440600.0,75.0,0.0723
+P004858,C02379,Scotland,Detached,1983-2012,68.2,1,C,Electric Storage,Moderate,Double,False,False,12079.4,2511.5,228000.0,75.0,0.042
+P004863,C00688,Scotland,Detached,1930-1982,64.6,1,D,Gas Boiler,Moderate,Double,False,False,11765.4,1713.1,240600.0,75.0,0.0522
+P004876,C03830,South East,Semi-Detached,1930-1982,45.0,1,C,Gas Boiler,Moderate,Single,True,True,8047.9,1134.7,256300.0,75.0,0.0418
+P004878,C02331,North West,Flat,1930-1982,52.8,1,C,Gas Boiler,Poor,Double,False,False,12805.6,1798.3,208900.0,75.0,0.0441
+P004885,C02623,Wales,Semi-Detached,1983-2012,68.1,1,C,Gas Boiler,Good,Double,False,False,6373.2,1984.5,211500.0,75.0,0.0228
+P004888,C02257,North West,Semi-Detached,1930-1982,171.9,4,E,Gas Boiler,Poor,Single,False,False,37411.1,6806.3,621100.0,75.0,0.0511
+P004890,C03504,South East,Semi-Detached,1983-2012,83.1,1,D,Electric Storage,Moderate,Double,False,True,14259.9,3162.1,418800.0,75.0,0.0567
+P004913,C01908,North West,Semi-Detached,Pre-1930,97.9,2,B,Heat Pump,Good,Double,True,True,0.0,3699.1,353800.0,30.15,0.0195
+P004957,C00216,North West,Semi-Detached,1983-2012,133.4,3,C,Electric Storage,Moderate,Single,False,True,23976.4,3899.4,502700.0,75.0,0.0358
+P004974,C02742,Midlands,Flat,Pre-1930,165.6,4,D,Gas Boiler,Good,Single,False,False,17458.2,6047.8,575600.0,67.29,0.0553
+P004993,C02411,Scotland,Semi-Detached,Pre-1930,112.5,2,B,Heat Pump,Good,Triple,True,True,0.0,4597.7,375500.0,0.99,0.0199

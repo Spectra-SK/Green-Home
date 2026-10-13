@@ -1,0 +1,22 @@
+{
+  "n_properties": 507,
+  "green_home_score_mean": 51.38658777120315,
+  "green_home_score_std": 16.654844681868468,
+  "valuation_model_comparison": {
+    "naive_mean_predictor": {
+      "mae": 0.015536678311826242,
+      "rmse": 0.019631675324635105,
+      "r2": -0.00018114972005189856
+    },
+    "linear_ols_regression": {
+      "mae": 0.006490668076400407,
+      "rmse": 0.007990206721777296,
+      "r2": 0.8343162291306934
+    },
+    "candidate_trained_regressor": {
+      "mae": 0.00657253082603368,
+      "rmse": 0.008089561392888122,
+      "r2": 0.8301702032293016
+    }
+  }
+}

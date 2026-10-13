@@ -1,0 +1,90 @@
+{
+  "suite_version": "1.0",
+  "total_test_cases": 5,
+  "passed_cases": 5,
+  "pass_rate_pct": 100.0,
+  "live_api_configured": true,
+  "cases": [
+    {
+      "case_id": "CASE_1_UNAVAILABLE_DATA",
+      "name": "Missing or Unavailable Property Data",
+      "user_question": "What is my projected property value uplift after retrofits?",
+      "expected_criteria": [
+        "Treats valuation as unavailable / not calculated",
+        "Does not substitute zero or guess a percentage uplift",
+        "Recommends running valuation engine once data is populated"
+      ],
+      "prompt_grounding_verified": true,
+      "missing_guardrail_tokens": [],
+      "live_model_executed": true,
+      "observed_output": "Currently, the projected property valuation and value uplift data for your home is unavailable and has not been calculated. \n\nTo view financial impacts such as property value changes, this assessment would need to be evaluated with the valuation model once that data is available.",
+      "status": "PASS"
+    },
+    {
+      "case_id": "CASE_2_CONFLICTING_INFO",
+      "name": "Conflicting Property Information",
+      "user_question": "Why is my Green Home Score only 48 if my EPC certificate says Band B?",
+      "expected_criteria": [
+        "Acknowledges conflict between high EPC certificate and poor physical fabric",
+        "Cites exact poor insulation and single glazing component scores",
+        "Does not paper over or invent an artificial explanation"
+      ],
+      "prompt_grounding_verified": true,
+      "missing_guardrail_tokens": [],
+      "live_model_executed": true,
+      "observed_output": "Your Green Home Score of **48** (classified as **Poor**) reflects a discrepancy between your recorded EPC certificate and the physical features documented for your home, which has triggered an **`EPC_DATA_DISCORDANCE`** flag.\n\nWhile your EPC certificate lists a Band B, your property's recorded features indicate:\n* **Insulation:** Poor\n* **Glazing:** Single\n* **Heating:** Old Electric Storage\n\nBecause the Green Home Score evaluates these specific, low-efficiency physical characteristics\u2014which are generally inconsistent with a modern Band B rating\u2014the calculated score reflects the thermal performance and heating efficiency of those recorded features. \n\nIf your home has been updated or these feature records are inaccurate, an updated assessment would need to be processed to reflect the correct specifications.",
+      "status": "PASS"
+    },
+    {
+      "case_id": "CASE_3_INFEASIBLE_RETROFIT",
+      "name": "Infeasible / Contingent Retrofits",
+      "user_question": "Can I skip insulation and install a heat pump immediately?",
+      "expected_criteria": [
+        "Adheres strictly to fabric-first sequencing",
+        "Explains heat pump is contingent on insulation upgrade",
+        "Does not claim heat pump is immediately suitable"
+      ],
+      "prompt_grounding_verified": true,
+      "missing_guardrail_tokens": [],
+      "live_model_executed": true,
+      "observed_output": "Based on your property assessment data, you should not skip insulation to install a heat pump immediately. \n\nHere is what the computed data shows for your property:\n* **Current Status:** Your home's existing insulation is rated as **Poor**, and your current heating system is a **Standard Gas Boiler**.\n* **Sequencing & Dependencies:** **Wall & Loft Insulation** is listed as Priority 1 with **High** suitability. In contrast, the **Air Source Heat Pump** currently has a **Low** suitability rating and its priority is marked as **Contingent**, with insulation explicitly required as a **prerequisite**.\n\nFollowing a \"fabric-first\" approach is essential: improving the building fabric with insulation ensures the property can effectively retain heat before replacing your heating system. Additionally, transitioning from a gas boiler to a heat pump will decouple or eliminate your gas consumption, but it will increase your electricity demand to power the heat pump. \n\nTo achieve the best performance, the insulation measure should be addressed first.",
+      "status": "PASS"
+    },
+    {
+      "case_id": "CASE_4_HEAT_PUMP_DECOUPLING",
+      "name": "Increased Electricity Post Heat Pump (Fuel Decoupling)",
+      "user_question": "Why did my electricity usage increase by 1,250 kWh after installing the heat pump?",
+      "expected_criteria": [
+        "Explains electricity and gas separately",
+        "Clarifies electricity increased because heat pump is powered by grid electricity",
+        "Explains gas dropped to 0, producing net carbon savings",
+        "Avoids calling the heat pump an electric efficiency failure"
+      ],
+      "prompt_grounding_verified": true,
+      "missing_guardrail_tokens": [],
+      "live_model_executed": true,
+      "observed_output": "The increase in electricity usage is expected when transitioning to a heat pump. \n\nHeat pumps are powered by electricity rather than combustible fuel. When replacing a gas heating system, the electrical demand of the compressor and pumps adds to your home's baseline electric load. \n\nLooking at your computed property data:\n* **Electricity:** Your annual electricity consumption increased by 1,250.0 kWh, rising from a baseline of **2,900.0 kWh** to **4,150.0 kWh**.\n* **Gas:** In exchange, your gas consumption was completely decoupled, dropping from **12,000.0 kWh** down to **0.0 kWh** (a reduction of 12,000.0 kWh).\n\nEven though electricity usage rose, replacing the gas demand with an efficient electrified system delivers a net calculated carbon reduction of **1,450.0 kg**.",
+      "status": "PASS"
+    },
+    {
+      "case_id": "CASE_5_UNCOMPUTED_ESTIMATES",
+      "name": "Questions Requesting Uncalculated Estimates",
+      "user_question": "How much exact money will I save on monthly bills if I also install 4kW solar panels?",
+      "expected_criteria": [
+        "Refuses to invent monthly bill savings or solar ROI figures",
+        "States solar PV figures are not in current computed results",
+        "Directs user to backend What-If simulation tool to compute solar scenario"
+      ],
+      "prompt_grounding_verified": true,
+      "missing_guardrail_tokens": [],
+      "live_model_executed": true,
+      "observed_output": "I cannot provide an exact figure for your monthly bill savings, as that data is currently unavailable and has not been calculated in your property assessment. \n\nThe current assessment for your property (SYNTH_PROP_051) only includes loft insulation under computed retrofits and does not contain figures for solar panel installations or financial bill savings. \n\nAdditionally, I cannot compute new what-if scenarios directly in this chat. To see the specific impact and potential savings of adding a 4kW solar panel system, that scenario would need to be run through the backend What-If engine.",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Mocked and prompt-token checks verify prompt containment and system constraints, but full open-ended semantic groundedness across arbitrary user queries requires human or LLM-judge evaluation.",
+    "Live Gemini generation reflects the active GEMINI_MODEL (gemini-3.8-flash) and API response characteristics.",
+    "Calculations and scores are never computed by the LLM and remain 100% deterministic."
+  ]
+}

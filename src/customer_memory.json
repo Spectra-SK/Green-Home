@@ -1,0 +1,33 @@
+{
+  "customers": {
+    "DEMO_CUST_001": {
+      "customer_id": "DEMO_CUST_001",
+      "property_id": "PROP_SYNTH_042",
+      "budget_limit_gbp": 12000.0,
+      "preferences": {
+        "prioritize_carbon_reduction": true,
+        "disruption_tolerance": "moderate",
+        "preferred_technologies": [
+          "solar_pv",
+          "loft_insulation"
+        ],
+        "excluded_technologies": []
+      },
+      "completed_retrofits": [
+        {
+          "retrofit_type": "double_glazing",
+          "completed_year": 2022,
+          "notes": "Upgraded front windows to double glazing"
+        }
+      ],
+      "recommendation_history": [
+        {
+          "date": "2026-09-15",
+          "recommended_package": "fabric_first",
+          "status": "under_consideration",
+          "notes": "Initial consultation completed"
+        }
+      ]
+    }
+  }
+}
